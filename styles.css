@@ -12,18 +12,7 @@ span{
     color: #2196F3;
 }
 
-.WebStudio{
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
-color: #212121;
-text-decoration: none;
-}
-
-button{
+.btn{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -40,7 +29,18 @@ ul{
     list-style: none;
 }
 
-.h1{
+.logo{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #212121;
+text-decoration: none;
+}
+
+.section-hero{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -53,7 +53,7 @@ ul{
 background-color: #2F303A;
 }
 
-.ul{
+.tehnology-list{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -73,7 +73,7 @@ line-height: 24px;
 letter-spacing: 0.03em;
 color: #757575;
 }
-.sectiontwo{
+.picture{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -84,7 +84,7 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
-.comand{
+.team-section{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
