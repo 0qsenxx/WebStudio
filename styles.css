@@ -1,5 +1,8 @@
-header{
+body{
     font-family: 'Roboto';
+}
+
+header{
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
@@ -12,7 +15,6 @@ span{
 }
 
 .btn{
-    font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
 line-height: 30px;
@@ -38,7 +40,6 @@ text-decoration: none;
 }
 
 .section-hero{
-    font-family: 'Roboto';;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -50,7 +51,6 @@ background-color: #2F303A;
 }
 
 .tehnology-list{
-    font-family: 'Roboto';
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -60,7 +60,6 @@ color: #212121;
 }
 
 .card-discription{
-    font-family: 'Roboto';
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
@@ -68,7 +67,6 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 .picture{
-    font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -78,7 +76,6 @@ color: #212121;
 }
 
 .team-section{
-    font-family: 'Roboto';
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -88,7 +85,6 @@ color: #212121;
 }
 
 .cardname{
-    font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
@@ -98,7 +94,6 @@ color: #212121;
 }
 
 .name{
-    font-family: 'Roboto';
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
