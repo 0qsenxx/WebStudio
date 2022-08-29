@@ -5,7 +5,7 @@ body{
 header{
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.1em;
 letter-spacing: 0.02em;
 color: #212121;
 }
@@ -17,7 +17,7 @@ span{
 .btn{
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.8em;
 display: flex;
 align-items: center;
 text-align: center;
@@ -33,7 +33,7 @@ ul{
     font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.1em;
 letter-spacing: 0.03em;
 color: #212121;
 text-decoration: none;
@@ -42,7 +42,7 @@ text-decoration: none;
 .section-hero{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.3em;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -53,7 +53,7 @@ background-color: #2F303A;
 .tehnology-list{
 font-weight: 700;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.1em;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
@@ -62,14 +62,14 @@ color: #212121;
 .card-discription{
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
+line-height: 1.7em;
 letter-spacing: 0.03em;
 color: #757575;
 }
 .picture{
 font-weight: 700;
 font-size: 36px;
-line-height: 42px;
+line-height: 1.1em;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
@@ -78,7 +78,7 @@ color: #212121;
 .team-section{
 font-weight: 700;
 font-size: 36px;
-line-height: 42px;
+line-height: 1.1em;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
@@ -87,7 +87,7 @@ color: #212121;
 .cardname{
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
+line-height: 1.1em;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
@@ -96,7 +96,7 @@ color: #212121;
 .name{
 font-weight: 400;
 font-size: 16px;
-line-height: 19px;
+line-height: 1.1em;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
