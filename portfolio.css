@@ -1,0 +1,158 @@
+body{
+    font-family: 'Roboto';
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    outline: 2px solid red;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* хедер */
+
+header .container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-color{
+    color: #2196F3;
+}
+
+.header-list{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 95px;
+}
+
+.header-item{
+    margin-left: 55px;
+}
+
+.header-item:first-child{
+    margin-left: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo{
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.1em;
+letter-spacing: 0.03em;
+color: #000000;
+text-decoration: none;
+}
+
+.header-link{
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.1em;
+letter-spacing: 0.02em;
+color: #212121
+}
+
+.header-link:hover{
+    color: #2196F3;
+}
+
+.header-contacts{
+    color: #2F303A;
+    display: block;
+}
+
+.contacts-list{
+    display: flex;
+}
+
+.header-contacts:hover{
+    color: #2196F3;
+}
+
+.contacts-item:first-child{
+    margin-right: 50px;
+}
+
+/* Main */
+
+main{
+    padding-top: 90px;
+}
+
+.main-button{
+    font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+background: #F5F4FA;
+border: none;
+padding: 6px 22px;
+}
+
+.button-item{
+    margin-left: 8px;
+}
+
+.main-button:hover{
+    background-color: #2196F3;
+}
+
+.main-list{
+    display: flex;
+    justify-content: center;
+}
+
+.main-images{
+    padding-top: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+img{
+    width: 370px;
+}
+
+.images-item{
+    width: 370px;
+    margin: 15px;
+}
+
+
