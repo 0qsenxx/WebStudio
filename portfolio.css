@@ -30,6 +30,13 @@ p{
     padding-right: 15px;
 }
 
+.card-container{
+    outline: 2px solid green;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 /* хедер */
 
 header .container{
@@ -151,8 +158,77 @@ img{
 }
 
 .images-item{
+    box-sizing: border-box;
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
     width: 370px;
     margin: 15px;
 }
 
+.card-title{
+    font-weight: 700;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: #212121;
+    margin-bottom: 4px;
+    /* padding-left: 24px; */
+}
+
+.title-description{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: #757575;
+/* padding-left: 24px;
+padding-bottom: 20px; */
+}
+
+footer{
+    height: 252px;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 57px;
+}
+
+.footer-logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color:#FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-link{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer-item{
+    margin-bottom: 9px;
+}
+
+.web{
+    color: #2196F3;
+}
+
+.footer-address{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
 

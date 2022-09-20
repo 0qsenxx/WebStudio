@@ -156,6 +156,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
 margin-bottom: 10px;
+padding-top: 30px;
 }
 
 .tehnology-list{
@@ -165,6 +166,54 @@ margin-bottom: 10px;
 .tehnology-item{
     width: 270px;
     margin-left: 30px;
+}
+
+.tehnology-item:nth-child(1)::before{
+    content:"";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+
+.tehnology-item:nth-child(2)::before{
+    content:"";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/Vector.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+
+.tehnology-item:nth-child(3)::before{
+    content:"";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/Vector\ \(1\).png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+
+.tehnology-item:nth-child(4)::before{
+    content:"";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/astronauе\ 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
 }
 
 .tehnology-item:first-child{
