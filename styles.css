@@ -116,6 +116,7 @@ color: #212121
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px ;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url(./images/background-hero.jpg);
 }
 
 .hero-title{
@@ -156,7 +157,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
 margin-bottom: 10px;
-padding-top: 30px;
+margin-top: 30px;
 }
 
 .tehnology-list{
@@ -306,6 +307,83 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 margin-top: 10px;
+margin-bottom: 16px;
+}
+
+.comand-link{
+    fill: #AFB1B8;
+}
+
+.svg-list{
+    display: flex;
+    justify-content: center;
+}
+
+.comand-icon{
+    margin-left: 22px;
+}
+
+.svg-list:first-child{
+    margin-left: 44px;
+}
+
+.svg-list:last-child{
+    margin-left: 0;
+    margin-right: 44px;
+}
+
+.comand-link:hover{
+    border-radius: 50%;
+    background-color: #2196F3;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.clients-section{
+    padding-top: 94px;
+    background-color: #FFFFFF;
+    padding-bottom: 94px;
+}
+
+.clients-title{
+    font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+}
+
+.clients-item:first-child{
+    margin-left: 0;
+}
+
+.clients-item{
+    margin-left: 30px;
+}
+
+.clients-link{
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
+    fill: #AFB1B8;
+    display: block;
+    width: 170px;
+    height: 90px;
+    /* padding-top: 20px;
+    padding-right: 63px;
+    padding-bottom: 20px;
+    padding-left: 63px; */
+}
+
+.clients-link:hover{
+    fill: #2196F3;
 }
 
 footer{
