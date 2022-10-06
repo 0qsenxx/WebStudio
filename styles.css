@@ -30,6 +30,15 @@ p{
     padding-right: 15px;
 }
 
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 2;
+} */
+
 /* хедер */
 
 header .container{
@@ -107,6 +116,28 @@ color: #212121
     margin-right: 50px;
 }
 
+.contacts-link1, .contacts-link2{
+    margin-right: 10px;
+}
+
+.contacts-link1:hover{
+    fill: #2196F3;
+}
+
+.contacts-item{
+    display: flex;
+    /* padding-top: 10px; */
+    align-items: center;
+}
+
+.contacts-link2:hover{
+    fill: #2196F3;
+}
+
+.contacts-item:nth-child(2){
+    margin-right: 10px;
+}
+
 /* Main */
 
 .hero-section{
@@ -177,7 +208,6 @@ margin-top: 30px;
     background-image: url("./images/antenna1.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
-    display: flex;
     background-position: center;
 }
 
@@ -189,7 +219,6 @@ margin-top: 30px;
     background-image: url("./images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
-    display: flex;
     background-position: center;
 }
 
@@ -201,7 +230,6 @@ margin-top: 30px;
     background-image: url("./images/Vector\ \(1\).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
-    display: flex;
     background-position: center;
 }
 
@@ -213,7 +241,6 @@ margin-top: 30px;
     background-image: url("./images/astronauе\ 1.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
-    display: flex;
     background-position: center;
 }
 
@@ -246,6 +273,17 @@ margin-bottom: 50px;
 .main-img{
     width: 370px;
     margin-left: 30px;
+    position: relative;
+}
+
+.main-img:nth-child(1):before{
+    content: "";
+    position: absolute;
+    top: 224px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    opacity: 1;
 }
 
 .main-img:first-child{
@@ -376,10 +414,8 @@ margin-bottom: 50px;
     display: block;
     width: 170px;
     height: 90px;
-    /* padding-top: 20px;
-    padding-right: 63px;
-    padding-bottom: 20px;
-    padding-left: 63px; */
+    text-align: center;
+    padding-top: 20px;
 }
 
 .clients-link:hover{
@@ -431,5 +467,13 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
+.icon-list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{
+    /* margin-left: ; */
+}
 
 
