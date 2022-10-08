@@ -73,7 +73,6 @@ header .container{
 header{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .header-logo{
@@ -113,6 +112,28 @@ color: #212121
 
 .contacts-item:first-child{
     margin-right: 50px;
+}
+
+.contacts-link1, .contacts-link2{
+    margin-right: 10px;
+}
+
+.contacts-link1:hover{
+    fill: #2196F3;
+}
+
+.contacts-item{
+    display: flex;
+    /* padding-top: 10px; */
+    align-items: center;
+}
+
+.contacts-link2:hover{
+    fill: #2196F3;
+}
+
+.contacts-item:nth-child(2){
+    margin-right: 10px;
 }
 
 /* Main */
