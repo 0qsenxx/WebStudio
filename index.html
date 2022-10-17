@@ -7,12 +7,10 @@
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./styles.css" />
     <!-- <link rel="stylesheet" href="./modal.js"> -->
   </head>
@@ -57,7 +55,7 @@
             href="tel:+380961111111">
               <svg width="10px" height="16px" class="tel-svg">
                 <use href="./images/symbol-defs (3).svg#icon-smartphone"></use>
-              </svg>
+              </svg>+380961111111
             </a>
             <!-- <a class="header-contacts" href="tel:+380961111111"
               >+38 096 111 11 11</a
@@ -73,22 +71,9 @@
       <!--Секция герой-->
       <section class="hero-section">
         <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-        <button type="button" class="hero-btn" data-button-open>
+        <button class="hero-btn" data-open-modal>
           Замовити послугу
         </button>
-        <!-- <div class="backdrop is-hidden" data-backdrop>
-          <div class="modal">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-              debitis quibusdam doloremque perspiciatis distinctio consequuntur
-              nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-              quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-              iusto eius aut facilis doloribus aliquam quae vitae dolor
-              voluptatibus? Accusamus corrupti cumque odio illo.
-            </p>
-            <button data-close-modal>Закрити</button>
-          </div>
-        </div> -->
       </section>
       <!--Внимание к деталям-->
       <section class="tehnology-section">
@@ -374,6 +359,7 @@
 
     <footer>
       <div class="container">
+        <div>
         <ul class="footer-list">
           <li class="footer-item">
             <h2 class="footer-logo"><span class="web">Web</span>Studio</h2>
@@ -398,6 +384,9 @@
             >
           </li>
         </ul>
+        </div>
+      <div class="">
+        <h2 class="icon-title">Приєднуйтесь</h2>
         <ul class="icon-list">
           <li class="footer-icon">
             <a class="footer-svg">
@@ -429,23 +418,37 @@
           </li>
         </ul>
       </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-          debitis quibusdam doloremque perspiciatis distinctio consequuntur
-          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-          iusto eius aut facilis doloribus aliquam quae vitae dolor
-          voluptatibus? Accusamus corrupti cumque odio illo.
-        </p>
-        <button data-close-modal>Закрити</button>
+      <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
+      <p class="input-name1">Ім’я</p>
+      <a class="modal-svg">
+        <svg width="18px" height="18px">
+          <use href="./images/symbol-defs(4).svg#icon-person-black-18dp-1"></use>
+        </svg>
+      </a>
+      <input class="input1" type="text">
+
+      <p class="input-name1">Телефон</p>
+      <input class="input1" type="text">
+
+      <p class="input-name1">Пошта</p>
+      <input class="input1" type="text">
+
+      <p class="input-name1">Коментарі</p>
+      <textarea class="comment-input" placeholder="Введіть текст"></textarea>
+      <br>
+        <input type="checkbox">
+      <p class="condition">Погоджуюсь з розсилкою і приймаю <span class="condition-span">Умови договору</span></p>
+      <button class="send-button">Надіслати</button>
+        <button class="close-modal" data-close-modal>Закрити</button>
       </div>
     </div>
     <script>
       const refs = {
-        openModalBtn: document.querySelector('[data-button-open]'),
+        openModalBtn: document.querySelector('[data-open-modal]'),
         closeModalBtn: document.querySelector('[data-close-modal]'),
         backdrop: document.querySelector('[data-backdrop]'),
       };
@@ -454,7 +457,6 @@
       refs.closeModalBtn.addEventListener('click', toggleModal);
 
       refs.backdrop.addEventListener('click', logBackdropClick);
-
       function toggleModal() {
         refs.backdrop.classList.toggle('is-hidden');
       }
