@@ -22,7 +22,7 @@ p{
 }
 
 .container{
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -31,13 +31,14 @@ p{
 }
 
 .card-container{
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     padding-left: 24px;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 /* хедер */
+
 
 header .container{
     height: 80px;
@@ -90,7 +91,27 @@ text-decoration: none;
 font-size: 14px;
 line-height: 1.1em;
 letter-spacing: 0.02em;
-color: #212121
+color: #212121;
+position: relative;
+padding-bottom: 31px;
+}
+
+.header-link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+    
+}
+
+.header-link:hover::after{
+    opacity: 1;
 }
 
 .header-link:hover{
@@ -136,6 +157,18 @@ color: #212121
     margin-right: 10px;
 }
 
+.mail-svg{
+    margin-right: 10px;
+}
+
+.tel-svg{
+    margin-right: 10px;
+}
+
+header{
+    stroke: 1px solid #ECECEC;
+}
+
 /* Main */
 
 main{
@@ -152,6 +185,7 @@ color: #212121;
 background: #F5F4FA;
 border: none;
 padding: 6px 22px;
+border-radius: 5px;
 }
 
 .button-item{
@@ -184,6 +218,7 @@ img{
 border: 1px solid #EEEEEE;
     width: 370px;
     margin: 15px;
+    position: relative;
 }
 
 .card-title{
@@ -207,6 +242,20 @@ color: #757575;
 /* padding-left: 24px;
 padding-bottom: 20px; */
 }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}   
+
+.overlay:hover{
+    
+}
+
+/* footer */
 
 footer{
     height: 252px;
