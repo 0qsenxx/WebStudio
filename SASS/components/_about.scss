@@ -1,0 +1,72 @@
+.about--title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+    }
+    
+    .about__list{
+        display: flex;
+        padding-bottom: 94px;
+    }
+    
+    .about--item{
+        width: 370px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .about--item:nth-child(1):before{
+        content: "ДЕСКТОПНІ ЗАСТОСУНКИ";
+        font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+    }
+    
+    .about--item:nth-child(2):before{
+        content: "МОБІЛЬНІ ЗАСТОСУНКИ";
+        font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    color: #FFFFFF;
+        position: absolute;
+        top: 224px;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+    }
+    
+    .about--item:nth-child(3):before{
+        content: "ДИЗАЙНЕРСЬКІ РІШЕННЯ";
+        font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    color: #FFFFFF;
+        position: absolute;
+        top: 224px;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+    }
+    
+    .about--item:first-child{
+        margin-left: 0;
+    }

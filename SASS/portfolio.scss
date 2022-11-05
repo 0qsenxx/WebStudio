@@ -1,4 +1,8 @@
-@import "./utils/\ variables";
+@import "./utils/vars";
+@import "./utils/placeholder";
 @import "./base/reset";
 @import "./base/common";
-@import
+@import "./components/header";
+@import "./components/potfolio/buttons";
+@import "./components/potfolio/posters";
+@import "./components/footer";

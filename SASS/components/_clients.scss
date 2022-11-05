@@ -1,0 +1,46 @@
+.clients__section{
+    padding-top: 94px;
+    background-color: #FFFFFF;
+    padding-bottom: 94px;
+}
+
+.clients--title{
+    font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.clients__list{
+    display: flex;
+}
+
+.clients--item:first-child{
+    margin-left: 0;
+}
+
+.clients--item{
+    margin-left: 30px;
+}
+
+.clients--link{
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
+    fill: #AFB1B8;
+    display: block;
+    width: 170px;
+    height: 90px;
+    text-align: center;
+    padding-top: 20px;
+    animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+    transition-delay: 50ms;
+    transition-duration: 250ms;
+}
+
+.clients--link:hover{
+    fill: #2196F3;
+    border-color: #2196F3;
+}

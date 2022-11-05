@@ -1,0 +1,137 @@
+footer{
+    height: 252px;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 57px;
+}
+
+.footer-logo{
+    /* font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em; */
+    @extend %logo-fonts;
+    color:#FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer--link{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer--item{
+    margin-bottom: 9px;
+}
+
+.white--logo{
+    color: #2196F3;
+}
+
+.footer--address{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.icon__list{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.footer--icon{
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+
+.footer--icon:first-child{
+    margin-left: 0;
+}
+
+.icon--title{
+    font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-top: 72px;
+/* margin-left: 156px; */
+margin-left: 70px;
+}
+
+.footer--svg{
+    fill: #FFFFFF;
+    animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+    transition-duration: 250ms;
+    transition-delay: 50ms;
+}
+
+.footer-svg:hover{
+    border-radius: 50%;
+    background-color: #2196F3;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-color: #2196F3;
+    color: #FFFFFF;
+}
+
+footer .container{
+    display: flex;
+}
+
+.footer-input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    margin-top: 20px;
+    padding-left: 17.32px;
+}
+
+.title-input-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+}
+
+.footer--btn{
+    background: #2196f3;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-left: 12px;
+    position: relative;
+    align-items: center;
+}

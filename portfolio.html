@@ -13,36 +13,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
 </head>
 <body>
   <header>
     <div class="container">
       <nav class="menu">
-        <a class="header-logo" href="/">
-          <span class="logo-color">Web</span>Studio</a
+        <a class="header--logo" href="/">
+          <span class="black--logo">Web</span>Studio</a
         >
 
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-link" href="/">Студія</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="header--link" href="/">Студія</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="./portfolio.html">Портфоліо</a>
+          <li class="nav__item">
+            <a class="header--link" href="./portfolio.html">Портфоліо</a>
           </li>
 
-          <li class="header-item">
-            <a class="header-link" href="#contacts">Контакти</a>
+          <li class="nav__item">
+            <a class="header--link" href="#contacts">Контакти</a>
           </li>
         </ul>
       </nav>
 
-      <ul class="contacts-list">
+      <ul class="header-contacts-list">
         <li class="contacts-item">
           <a
             class="header-contacts contacts-link1"
             href="mailto:info@devstudio.com">
-            <svg width="16px" height="12px" class="mail-svg">
+            <svg width="16px" height="12px" class="header--picture">
               <use
                 href="./images/symbol-defs (3).svg#icon-envelope-hover"
               ></use></svg>info@devstudio.com
@@ -52,7 +52,7 @@
         <li class="contacts-item">
           <a class="contacts-link2 header-contacts"
           href="tel:+380961111111">
-            <svg width="10px" height="16px" class="tel-svg">
+            <svg width="10px" height="16px" class="header--picture">
               <use href="./images/symbol-defs (3).svg#icon-smartphone"></use>
             </svg>+380961111111
           </a>
@@ -77,6 +77,7 @@
         </ul>
         </div>
         <div class="container">
+          <section class="posters__section">
         <ul class="main-images">
             <li class="images-item">
               <img src="images/img (1).png" alt="imagess"/>
@@ -178,23 +179,77 @@
               </div>
             </li>
         </ul>
+          </section>
         </div>
         <footer>
           <div class="container">
-            <ul class="footer-list">
-          <li class="footer-item"><h2 class="footer-logo"><span class="web">Web</span>Studio</h2></li>
+            <div>
+            <ul class="footer__list">
+              <li class="footer--item">
+                <h2 class="footer-logo"><span class="white--logo">Web</span>Studio</h2>
+              </li>
+              <li class="footer--item">
+                <a
+                  class="footer--link"
+                  href="https://www.google.com.ua/maps/place/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80+%D0%9C%D0%92%D0%94+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8/@50.4267641,30.5365487,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!8m2!3d50.4267607!4d30.5387374?hl=ru"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
     
-          <li class="footer-item"><address id="contacts"></li>
-            <li class="footer-item"><a
-            class="footer-link"
-              href="https://www.google.com.ua/maps/place/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80+%D0%9C%D0%92%D0%94+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8/@50.4267641,30.5365487,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!8m2!3d50.4267607!4d30.5387374?hl=ru"
-              >м. Київ, пр-т Лесі Українки, 26</a></li>
+              <li class="footer--item">
+                <a class="footer--address" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
     
-            <li class="footer-item"><a class="footer-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    
-            <li class="footer-item"><a class="footer-address" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </address>
+              <li class="footer--item">
+                <a class="footer--address" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
             </ul>
+            </div>
+          <div class="">
+            <h2 class="icon--title">Приєднуйтесь</h2>
+            <ul class="icon__list">
+              <li class="footer--icon">
+                <a class="footer--svg">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer--icon">
+                <a class="footer--svg">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer--icon">
+                <a class="footer--svg">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer--icon">
+                <a class="footer--svg">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__mailing">
+            <h3 class="title-input-text">Підпишіться на розсилку</h3>
+            <input type="text" placeholder="E-mail" class="footer-input">
+            <button type="button" class="footer--btn"><svg width="24" height="24" class="footer--button--pic">
+              <use href="./images12/svg/telegram.svg#telegram"></use>
+            </svg><span class="footer--button__text">Підписатися</span></button>
+            
+          </div>
           </div>
         </footer>
     </main>
