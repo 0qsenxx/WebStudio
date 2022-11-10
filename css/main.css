@@ -214,8 +214,8 @@ header {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/background-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/background-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero.jpg);
 }
 
 .hero--title {
@@ -426,7 +426,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/antenna1.png");
+  background-image: url("../../images/antenna1.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,7 +437,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/Vector.png");
+  background-image: url("../../images/Vector.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -448,7 +448,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/Vector (1).png");
+  background-image: url("../../images/Vector (1).png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -459,7 +459,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/astronauе 1.png");
+  background-image: url("../../images/astronauе 1.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -509,7 +509,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/antenna1.png");
+  background-image: url("../../images/antenna1.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -520,7 +520,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/Vector.png");
+  background-image: url("../../images/Vector.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -531,7 +531,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/Vector (1).png");
+  background-image: url("../../images/Vector (1).png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;
@@ -542,7 +542,7 @@ footer .container {
   display: block;
   width: 270px;
   height: 120px;
-  background-image: url("./images/astronauе 1.png");
+  background-image: url("../../images/astronauе 1.png");
   background-color: #F5F4FA;
   background-repeat: no-repeat;
   background-position: center;

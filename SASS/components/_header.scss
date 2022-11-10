@@ -8,18 +8,18 @@ header .container{
     color: #2196F3;
 }
 
-.nav__list{
+.menu__list{
     text-align: center;
     display: flex;
     align-items: center;
     margin-left: 95px;
 }
 
-.nav__item{
+.menu__item{
     margin-left: 55px;
 }
 
-.nav__item:first-child{
+.menu__item:first-child{
     margin-left: 0;
 }
 
@@ -34,7 +34,7 @@ header{
     align-items: center;
 }
 
-.header--logo{
+.menu__logo{
     /* font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;

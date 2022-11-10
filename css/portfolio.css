@@ -1,4 +1,4 @@
-.footer-logo, .header--logo {
+.footer-logo, .menu__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -37,7 +37,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .card-container {
   /* outline: 2px solid green; */
   padding-left: 24px;
@@ -59,7 +58,7 @@ header .container {
   color: #2196F3;
 }
 
-.nav__list {
+.menu__list {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,11 +69,11 @@ header .container {
   margin-left: 95px;
 }
 
-.nav__item {
+.menu__item {
   margin-left: 55px;
 }
 
-.nav__item:first-child {
+.menu__item:first-child {
   margin-left: 0;
 }
 
@@ -97,7 +96,7 @@ header {
           align-items: center;
 }
 
-.header--logo {
+.menu__logo {
   /* font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;

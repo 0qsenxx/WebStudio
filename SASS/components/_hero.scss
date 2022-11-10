@@ -1,35 +1,71 @@
-.hero-section{
-    /* width: 1600px; */
+.hero-section {
+
+  @media screen and (min-width: 480px;) {
+      /* width: 1600px; */
+  height: 600px;
+  background-color: #2f303a;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/background-hero.jpg);
+  }
+
+  @media screen and (min-width: 768px;) {
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+
+  @media screen and (min-width: 1200px;) {
     height: 600px;
-    background-color: #2F303A;
+    background-color: #2f303a;
     text-align: center;
     padding-bottom: 200px;
-    padding-top: 200px ;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url(./images/background-hero.jpg);
+    padding-top: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/background-hero.jpg);
+  }
 }
 
-.hero--title{
+.hero--title {
+  @media screen and (min-width: 480px;) {
     font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 1200px;) {
     font-size: 44px;
     line-height: 1.3em;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 30px;
+  }
 }
 
-.hero--btn{
-font-weight: 700;
-font-size: 16px;
-line-height: 1.8em;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color: #2196F3;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 24px;
-padding-right: 24px;
-border: none;
-/* pointer-events: none; */
+.hero--btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: none;
+  /* pointer-events: none; */
 }
