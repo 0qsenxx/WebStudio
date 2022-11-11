@@ -278,6 +278,7 @@ header {
     padding-left: 204px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: url(../../images/background-hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -289,8 +290,8 @@ header {
     padding-top: 200px;
     padding-left: 452px;
     padding-right: 452px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero.jpg);
   }
 }
 
@@ -304,6 +305,12 @@ header {
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-right: 204px;
+    margin-left: 204px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -533,9 +540,21 @@ footer .container {
   }
 }
 
-.tehnology__item {
-  width: 270px;
-  margin-left: 30px;
+@media screen and (min-width: 480px) {
+  .tehnology__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item {
+    width: 270px;
+    margin-left: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -581,10 +600,11 @@ footer .container {
     display: block;
     width: 450px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -593,7 +613,7 @@ footer .container {
     display: block;
     width: 354px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -605,7 +625,7 @@ footer .container {
     display: block;
     width: 270px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -618,10 +638,11 @@ footer .container {
     display: block;
     width: 450px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -630,7 +651,7 @@ footer .container {
     display: block;
     width: 354px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -642,22 +663,60 @@ footer .container {
     display: block;
     width: 270px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
-.tehnology__item:nth-child(4)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/astronauе 1.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../..//images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .tehnology__item {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item {
+    margin-left: 30px;
+  }
 }
 
 .tehnology__item:first-child {
@@ -671,7 +730,6 @@ footer .container {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
 @media screen and (min-width: 480px) {
   .tehnology {
     padding-top: 60px;
@@ -727,9 +785,21 @@ footer .container {
   }
 }
 
-.tehnology__item {
-  width: 270px;
-  margin-left: 30px;
+@media screen and (min-width: 480px) {
+  .tehnology__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item {
+    width: 270px;
+    margin-left: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -775,10 +845,11 @@ footer .container {
     display: block;
     width: 450px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -787,7 +858,7 @@ footer .container {
     display: block;
     width: 354px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -799,7 +870,7 @@ footer .container {
     display: block;
     width: 270px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector.png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -812,10 +883,11 @@ footer .container {
     display: block;
     width: 450px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -824,7 +896,7 @@ footer .container {
     display: block;
     width: 354px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
@@ -836,22 +908,60 @@ footer .container {
     display: block;
     width: 270px;
     height: 120px;
-    background-image: url("../../images/antenna1.png");
+    background-image: url("../../images/Vector (1).png");
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
-.tehnology__item:nth-child(4)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/astronauе 1.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../..//images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/astronauе 1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .tehnology__item {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology__item {
+    margin-left: 30px;
+  }
 }
 
 .tehnology__item:first-child {
@@ -864,6 +974,23 @@ footer .container {
   line-height: 1.7em;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .about__us {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__us {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .about__title {
@@ -952,7 +1079,12 @@ footer .container {
   display: flex;
   text-align: center;
 }
-
+@media screen and (min-width: 480px) {
+  .comand__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .comand__title {
   font-weight: 700;
   font-size: 36px;
@@ -970,6 +1102,26 @@ footer .container {
   margin-bottom: 30px;
   display: block;
 }
+@media screen and (min-width: 480px) {
+  .comand__picture {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comand__picture {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand__picture {
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
 
 .comand__item {
   font-weight: 500;
@@ -986,9 +1138,15 @@ footer .container {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+@media screen and (min-width: 480px) {
+  .comand__item {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
 .comand__item:first-child {
   margin-left: 0;
+  margin-top: 0;
 }
 
 .comand__text {
@@ -1045,10 +1203,18 @@ footer .container {
   color: #FFFFFF;
 }
 
-.clients {
-  padding-top: 94px;
-  background-color: #FFFFFF;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    background-color: #FFFFFF;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -1065,14 +1231,34 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients__item:first-child {
   margin-left: 0;
 }
 
-.clients__item {
-  margin-left: 30px;
+.clients__item:nth-child(3) {
+  margin-left: 0;
+}
+
+.clients__item:nth-child(5) {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-left: 30px;
+  }
 }
 
 .clients--link {
@@ -1081,7 +1267,7 @@ footer .container {
   fill: #AFB1B8;
   display: block;
   width: 170px;
-  height: 90px;
+  height: 92px;
   text-align: center;
   padding-top: 20px;
   -webkit-animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
@@ -1090,6 +1276,30 @@ footer .container {
           transition-delay: 50ms;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+@media screen and (min-width: 480px) {
+  .clients--link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients--link {
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
+    fill: #AFB1B8;
+    display: block;
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    padding-top: 20px;
+    -webkit-animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+            animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+    -webkit-transition-delay: 50ms;
+            transition-delay: 50ms;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+  }
 }
 
 .clients--link:hover {

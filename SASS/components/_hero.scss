@@ -18,6 +18,7 @@
     padding-left: 204px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: url(../../images/background-hero.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -31,7 +32,7 @@
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      )
+      ), url(../../images/background-hero.jpg)
   }
 }
 
@@ -48,7 +49,8 @@
   }
 
   @media screen and (min-width: 768px){
-    
+    margin-right: 204px;
+    margin-left: 204px;
   }
 
   @media screen and (min-width: 1200px) {

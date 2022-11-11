@@ -56,8 +56,20 @@ line-height: 1.1em;
 }
 
 .tehnology__item{
-    width: 270px;
-    margin-left: 30px;
+
+    @media screen and (min-width: 480px){
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        margin-left: 30px;
+    }
+
 }
 
 .tehnology__item:nth-child(1)::before{
@@ -103,10 +115,11 @@ line-height: 1.1em;
         display: block;
         width: 450px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector.png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
+        margin-top: 30px;
     }
 
     @media screen and (min-width: 768px){
@@ -114,7 +127,7 @@ line-height: 1.1em;
         display: block;
         width: 354px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector.png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
@@ -125,7 +138,7 @@ line-height: 1.1em;
         display: block;
         width: 270px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector.png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
@@ -139,10 +152,11 @@ line-height: 1.1em;
         display: block;
         width: 450px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector\ \(1\).png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
+        margin-top: 30px;
     }
 
     @media screen and (min-width: 768px){
@@ -150,7 +164,7 @@ line-height: 1.1em;
         display: block;
         width: 354px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector\ \(1\).png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
@@ -161,7 +175,7 @@ line-height: 1.1em;
         display: block;
         width: 270px;
         height: 120px;
-        background-image: url("../../images/antenna1.png");
+        background-image: url("../../images/Vector\ \(1\).png");
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
@@ -169,14 +183,59 @@ line-height: 1.1em;
 }
 
 .tehnology__item:nth-child(4)::before{
-    content:"";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-image: url("../../images/astronauе\ 1.png");
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    @media screen and (min-width: 480px){
+        content:"";
+        display: block;
+        width: 450px;
+        height: 120px;
+        background-image: url("../..//images/astronauе\ 1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px){
+        content:"";
+        display: block;
+        width: 354px;
+        height: 120px;
+        background-image: url("../../images/astronauе\ 1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1200px){
+        content:"";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-image: url("../../images/astronauе\ 1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+// .tehnology__item:first-child{
+//     margin-left: 0;
+// }
+
+.tehnology__item{
+
+    @media screen and (min-width: 480px){
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 768px){
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-left: 30px;
+    }
+
 }
 
 .tehnology__item:first-child{
@@ -189,4 +248,14 @@ font-size: 14px;
 line-height: 1.7em;
 letter-spacing: 0.03em;
 color: #757575;
+
+@media screen and (min-width: 480px){
+}
+
+@media screen and (min-width: 768px){
+}
+
+@media screen and (min-width: 1200px){
+}
+
 }
