@@ -9,10 +9,22 @@ header .container{
 }
 
 .menu__list{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-left: 95px;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 95px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-left: 95px;
+    }
 }
 
 .menu__item{
@@ -40,7 +52,12 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.1em;
 letter-spacing: 0.03em; */
-@extend %logo-fonts;
+/* @extend %logo-fonts; */
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
 color: #000000;
 text-decoration: none;
 }
@@ -98,6 +115,20 @@ padding-bottom: 31px;
 
 .header-contacts-list{
     display: flex;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-contacts:hover{

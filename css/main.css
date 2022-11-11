@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.footer-logo, .header--logo {
+.footer-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -32,11 +32,25 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .card-container {
@@ -60,22 +74,37 @@ header .container {
   color: #2196F3;
 }
 
-.nav__list {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 95px;
+@media screen and (min-width: 480px) {
+  .menu__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 95px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__list {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 95px;
+  }
 }
 
-.nav__item {
+.menu__item {
   margin-left: 55px;
 }
 
-.nav__item:first-child {
+.menu__item:first-child {
   margin-left: 0;
 }
 
@@ -98,12 +127,18 @@ header {
           align-items: center;
 }
 
-.header--logo {
+.menu__logo {
   /* font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1em;
   letter-spacing: 0.03em; */
+  /* @extend %logo-fonts; */
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
 }
@@ -168,6 +203,29 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .header-contacts-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts-list {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .header-contacts:hover {
   color: #2196F3;
@@ -207,26 +265,57 @@ header {
   margin-right: 10px;
 }
 
-.hero-section {
-  /* width: 1600px; */
-  height: 600px;
-  background-color: #2F303A;
-  text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-hero.jpg);
+@media screen and (min-width: 480px) {
+  .hero-section {
+    /* width: 1600px; */
+    height: 400px;
+    background-color: #2f303a;
+    text-align: center;
+    padding-bottom: 118px;
+    padding-top: 118px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(././);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(././);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-right: 204px;
+    padding-left: 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 600px;
+    background-color: #2f303a;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
 }
 
-.hero--title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3em;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .hero--title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero--title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .hero--btn {
@@ -234,8 +323,8 @@ header {
   font-size: 16px;
   line-height: 1.8em;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: #ffffff;
+  background-color: #2196f3;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 24px;
@@ -394,26 +483,59 @@ footer .container {
           align-items: center;
 }
 
-.tehnology-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .tehnology-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.tehnology-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .tehnology-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-title {
+    line-height: 1.1em;
+  }
 }
 
-.tehnology-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .tehnology-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .tehnology-item {
@@ -421,37 +543,115 @@ footer .container {
   margin-left: 30px;
 }
 
-.tehnology-item:nth-child(1)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/antenna1.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.tehnology-item:nth-child(2)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/Vector.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.tehnology-item:nth-child(3)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/Vector (1).png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .tehnology-item:nth-child(4)::before {
@@ -477,26 +677,59 @@ footer .container {
   color: #757575;
 }
 
-.tehnology-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .tehnology-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.tehnology-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1em;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .tehnology-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-title {
+    line-height: 1.1em;
+  }
 }
 
-.tehnology-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) {
+  .tehnology-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .tehnology-item {
@@ -504,37 +737,115 @@ footer .container {
   margin-left: 30px;
 }
 
-.tehnology-item:nth-child(1)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/antenna1.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.tehnology-item:nth-child(2)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/Vector.png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.tehnology-item:nth-child(3)::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-image: url("../../images/Vector (1).png");
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tehnology-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("../../images/antenna1.png");
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .tehnology-item:nth-child(4)::before {

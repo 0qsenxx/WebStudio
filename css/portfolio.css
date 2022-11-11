@@ -1,4 +1,4 @@
-.footer-logo, .menu__logo {
+.footer-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -31,12 +31,27 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .card-container {
   /* outline: 2px solid green; */
   padding-left: 24px;
@@ -58,15 +73,30 @@ header .container {
   color: #2196F3;
 }
 
-.menu__list {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 95px;
+@media screen and (min-width: 480px) {
+  .menu__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 95px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__list {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 95px;
+  }
 }
 
 .menu__item {
@@ -102,6 +132,12 @@ header {
   font-size: 26px;
   line-height: 1.1em;
   letter-spacing: 0.03em; */
+  /* @extend %logo-fonts; */
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
 }
@@ -165,6 +201,29 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .header-contacts-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts-list {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-contacts:hover {

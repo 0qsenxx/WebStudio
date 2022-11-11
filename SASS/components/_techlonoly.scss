@@ -1,21 +1,58 @@
 .tehnology-section{
-    padding-top: 94px;
+
+    @media screen and (min-width: 480px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .tehnology-title{
-font-weight: 700;
+
+@media screen and (min-width:480px){
+    font-weight: 700;
 font-size: 14px;
-line-height: 1.1em;
+line-height: 16px;
+text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
 margin-bottom: 10px;
+color: #212121;
 margin-top: 30px;
 }
 
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1200px){
+line-height: 1.1em;
+}
+}
+
 .tehnology-list{
-    display: flex;
+
+    @media screen and (min-width: 480px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px){
+        
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
 }
 
 .tehnology-item{
@@ -24,36 +61,111 @@ margin-top: 30px;
 }
 
 .tehnology-item:nth-child(1)::before{
-    content:"";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-image: url("../../images/antenna1.png");
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    @media screen and (min-width: 480px){
+        content:"";
+        display: block;
+        width: 450px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 768px){
+        content:"";
+        display: block;
+        width: 354px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1200px){
+        content:"";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .tehnology-item:nth-child(2)::before{
-    content:"";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-image: url("../../images/Vector.png");
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    @media screen and (min-width: 480px){
+        content:"";
+        display: block;
+        width: 450px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 768px){
+        content:"";
+        display: block;
+        width: 354px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1200px){
+        content:"";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .tehnology-item:nth-child(3)::before{
-    content:"";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-image: url("../../images/Vector\ \(1\).png");
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    @media screen and (min-width: 480px){
+        content:"";
+        display: block;
+        width: 450px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 768px){
+        content:"";
+        display: block;
+        width: 354px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @media screen and (min-width: 1200px){
+        content:"";
+        display: block;
+        width: 270px;
+        height: 120px;
+        background-image: url("../../images/antenna1.png");
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .tehnology-item:nth-child(4)::before{
