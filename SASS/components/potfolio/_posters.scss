@@ -1,4 +1,4 @@
-.main-images{
+.posters__list{
     padding-top: 54px;
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@ img{
     width: 370px;
 }
 
-.images-item{
+.posters__item{
     box-sizing: border-box;
     background: #FFFFFF;
 border: 1px solid #EEEEEE;
@@ -18,13 +18,13 @@ border: 1px solid #EEEEEE;
     position: relative;
 }
 
-.images-item:hover{
+.posters__item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-title{
+.card__title{
     font-weight: 700;
 font-size: 18px;
 line-height: 36px;
@@ -34,7 +34,7 @@ color: #212121;
     /* padding-left: 24px; */
 }
 
-.title-description{
+.title__description{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -81,7 +81,7 @@ padding-bottom: 20px; */
     opacity: 1;
 }
 
-.overlay-text{
+.overlay__text{
     font-weight: 400;
 font-size: 18px;
 line-height: 28px;
@@ -89,6 +89,6 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 
-.posters__section{
+.posters{
     padding-bottom: 90px;
 }

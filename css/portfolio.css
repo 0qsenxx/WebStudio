@@ -142,7 +142,7 @@ header {
   text-decoration: none;
 }
 
-.header--link {
+.menu--link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1em;
@@ -152,7 +152,7 @@ header {
   padding-bottom: 31px;
 }
 
-.header--link::after {
+.menu--link::after {
   /* content: "";
   display: block;
   width: 100%;
@@ -180,7 +180,7 @@ header {
           transform: scaleX(0);
 }
 
-.header--link:hover::after {
+.menu--link:hover::after {
   /* opacity: 1; */
   opacity: 1;
   width: 100%;
@@ -188,34 +188,24 @@ header {
           transform: scaleX(1);
 }
 
-.header--link:hover {
+.menu--link:hover {
   color: #2196F3;
 }
 
-.header-contacts {
-  color: #2F303A;
-  display: block;
-}
-
-.header-contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 @media screen and (min-width: 480px) {
-  .header-contacts-list {
+  .header__list {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .header-contacts-list {
+  .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header-contacts-list {
+  .header__list {
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,23 +216,28 @@ header {
   }
 }
 
-.header-contacts:hover {
+.header--contacts {
+  color: #2F303A;
+  display: block;
+}
+
+.header--contacts:hover {
   color: #2196F3;
 }
 
-.contacts-item:first-child {
+.header__item:first-child {
   margin-right: 50px;
 }
 
-.contacts-link1, .contacts-link2 {
+.contacts--link1, .contacts--link2 {
   margin-right: 10px;
 }
 
-.contacts-link1:hover {
+.contacts--link1:hover {
   fill: #2196F3;
 }
 
-.contacts-item {
+.header__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,11 +247,11 @@ header {
           align-items: center;
 }
 
-.contacts-link2:hover {
+.contacts--link2:hover {
   fill: #2196F3;
 }
 
-.contacts-item:nth-child(2) {
+.header__item:nth-child(2) {
   margin-right: 10px;
 }
 
@@ -268,7 +263,7 @@ main {
   padding-top: 90px;
 }
 
-.main-button {
+.main--button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -281,15 +276,15 @@ main {
   border-radius: 5px;
 }
 
-.button-item {
+.buttons__item {
   margin-left: 8px;
 }
 
-.main-button:hover {
+.main--button:hover {
   background-color: #2196F3;
 }
 
-.main-list {
+.buttons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +293,7 @@ main {
           justify-content: center;
 }
 
-.main-images {
+.posters__list {
   padding-top: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,7 +307,7 @@ img {
   width: 370px;
 }
 
-.images-item {
+.posters__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFFFFF;
@@ -322,12 +317,12 @@ img {
   position: relative;
 }
 
-.images-item:hover {
+.posters__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-title {
+.card__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -337,7 +332,7 @@ img {
   /* padding-left: 24px; */
 }
 
-.title-description {
+.title__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -387,7 +382,7 @@ img {
   opacity: 1;
 }
 
-.overlay-text {
+.overlay__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -395,7 +390,7 @@ img {
   color: #FFFFFF;
 }
 
-.posters__section {
+.posters {
   padding-bottom: 90px;
 }
 
@@ -426,15 +421,15 @@ footer {
   color: #FFFFFF;
 }
 
-.footer--item {
+.footer__item {
   margin-bottom: 9px;
 }
 
-.white--logo {
+.white__logo {
   color: #2196F3;
 }
 
-.footer--address {
+.address {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -453,18 +448,18 @@ footer {
   margin-left: 70px;
 }
 
-.footer--icon {
+.footer__icon {
   margin-top: 20px;
   width: 44px;
   height: 44px;
   margin-left: 10px;
 }
 
-.footer--icon:first-child {
+.footer__icon:first-child {
   margin-left: 0;
 }
 
-.icon--title {
+.icon__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -486,7 +481,7 @@ footer {
           transition-delay: 50ms;
 }
 
-.footer-svg:hover {
+.footer--svg:hover {
   border-radius: 50%;
   background-color: #2196F3;
   padding-left: 12px;

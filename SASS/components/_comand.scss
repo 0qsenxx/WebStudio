@@ -1,4 +1,4 @@
-.comand-section{
+.comand{
     background-color: #F5F4FA;
     padding-bottom: 94px;
 }
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.comand--title{
+.comand__title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.1em;
@@ -19,14 +19,14 @@ padding-top: 94px;
 margin-bottom: 50px;
 }
 
-.comand--picture{
+.comand__picture{
     width: 270px;
     height: 260px;
     margin-bottom: 30px;
     display: block;
 }
 
-.comand--item{
+.comand__item{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.1em;
@@ -41,11 +41,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 border-radius: 0px 0px 4px 4px;
 }
 
-.comand--item:first-child{
+.comand__item:first-child{
     margin-left: 0;
 }
 
-.name{
+.comand__text{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.1em;
@@ -68,7 +68,7 @@ margin-bottom: 16px;
     justify-content: center;
 }
 
-.comand--icon{
+.comand__icon{
     margin-left: 22px;
 }
 

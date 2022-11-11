@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
 
   @media screen and (min-width: 480px) {
       /* width: 1600px; */
@@ -35,7 +35,7 @@
   }
 }
 
-.hero--title {
+.hero__title {
   @media screen and (min-width: 480px) {
     font-weight: 900;
     font-size: 26px;
@@ -58,7 +58,7 @@
 
 }
 
-.hero--btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8em;

@@ -1,4 +1,4 @@
-.about--title{
+.about__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1em;
@@ -13,13 +13,13 @@
         padding-bottom: 94px;
     }
     
-    .about--item{
+    .about__item{
         width: 370px;
         margin-left: 30px;
         position: relative;
     }
     
-    .about--item:nth-child(1):before{
+    .about__item:nth-child(1):before{
         content: "ДЕСКТОПНІ ЗАСТОСУНКИ";
         font-weight: 700;
     font-size: 14px;
@@ -35,7 +35,7 @@
         height: 70px;
     }
     
-    .about--item:nth-child(2):before{
+    .about__item:nth-child(2):before{
         content: "МОБІЛЬНІ ЗАСТОСУНКИ";
         font-weight: 700;
     font-size: 14px;
@@ -51,7 +51,7 @@
         height: 70px;
     }
     
-    .about--item:nth-child(3):before{
+    .about__item:nth-child(3):before{
         content: "ДИЗАЙНЕРСЬКІ РІШЕННЯ";
         font-weight: 700;
     font-size: 14px;
@@ -67,6 +67,6 @@
         height: 70px;
     }
     
-    .about--item:first-child{
+    .about__item:first-child{
         margin-left: 0;
     }

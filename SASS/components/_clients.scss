@@ -1,10 +1,10 @@
-.clients__section{
+.clients{
     padding-top: 94px;
     background-color: #FFFFFF;
     padding-bottom: 94px;
 }
 
-.clients--title{
+.clients__title{
     font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -18,11 +18,11 @@ margin-bottom: 50px;
     display: flex;
 }
 
-.clients--item:first-child{
+.clients__item:first-child{
     margin-left: 0;
 }
 
-.clients--item{
+.clients__item{
     margin-left: 30px;
 }
 

@@ -26,15 +26,15 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 
-.footer--item{
+.footer__item{
     margin-bottom: 9px;
 }
 
-.white--logo{
+.white__logo{
     color: #2196F3;
 }
 
-.footer--address{
+.address{
     font-family: 'Roboto';
 font-weight: 400;
 font-size: 14px;
@@ -49,18 +49,18 @@ color: rgba(255, 255, 255, 0.6);
     margin-left: 70px;
 }
 
-.footer--icon{
+.footer__icon{
     margin-top: 20px;
     width: 44px;
     height: 44px;
     margin-left: 10px;
 }
 
-.footer--icon:first-child{
+.footer__icon:first-child{
     margin-left: 0;
 }
 
-.icon--title{
+.icon__title{
     font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -79,7 +79,7 @@ margin-left: 70px;
     transition-delay: 50ms;
 }
 
-.footer-svg:hover{
+.footer--svg:hover{
     border-radius: 50%;
     background-color: #2196F3;
     padding-left: 12px;
