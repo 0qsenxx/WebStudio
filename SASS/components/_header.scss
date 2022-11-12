@@ -16,7 +16,7 @@ header .container{
 
     @media screen and (min-width: 768px) {
         display: flex;
-        margin-left: 95px;
+        // margin-left: 95px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -28,11 +28,31 @@ header .container{
 }
 
 .menu__item{
-    margin-left: 55px;
+
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+        margin-left: 51px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-left: 55px;
+    }
 }
 
 .menu__item:first-child{
-    margin-left: 0;
+
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-left: 0;
+    }
 }
 
 .menu{
@@ -115,7 +135,8 @@ padding-bottom: 31px;
     }
 
     @media screen and (min-width: 768px) {
-        display: flex;
+        display: block;
+        margin-left: 96px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -141,6 +162,31 @@ padding-bottom: 31px;
 
 .contacts--link1, .contacts--link2{
     margin-right: 10px;
+    display: flex;
+
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #757575;
+
+    }
+
+    @media screen and (min-width: 1200px){
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    
 }
 
 .contacts--link1:hover{
@@ -148,9 +194,23 @@ padding-bottom: 31px;
 }
 
 .header__item{
-    display: flex;
-    /* padding-top: 10px; */
-    align-items: center;
+
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+        
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        /* padding-top: 10px; */
+        align-items: center;
+    }
+}
+
+.header__item:nth-child(2){
+    margin-top: 10px;
 }
 
 .contacts--link2:hover{
@@ -163,4 +223,5 @@ padding-bottom: 31px;
 
 .header--picture{
     margin-right: 10px;
+    
 }

@@ -45,17 +45,22 @@ margin-bottom: 50px;
 .clients__item{
 
     @media screen and (min-width: 480px){
-        margin-left: 30px;
-        margin-top: 30px;
         width: 210px;
         height: 92px;
+        margin-left: 30px;
     }
 
     @media screen and (min-width: 768px){
+        width: 226px;
+        height: 92px;
+        margin-left: 30px;
     }
 
     @media screen and (min-width: 1200px){
-        margin-left: 30px;
+                // margin-left: 30px;
+        // margin-top: 30px;
+        width: 170px;
+        height: 92px;
     }
 }
 
@@ -75,7 +80,6 @@ margin-bottom: 50px;
     @media screen and (min-width: 480px){
         width: 210px;
         height: 92px;
-
     }
 
     @media screen and (min-width: 768px){

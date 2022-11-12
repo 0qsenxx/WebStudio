@@ -83,7 +83,6 @@ header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 95px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -99,12 +98,26 @@ header .container {
   }
 }
 
-.menu__item {
-  margin-left: 55px;
+@media screen and (min-width: 768px) {
+  .menu__item {
+    margin-left: 51px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__item {
+    margin-left: 55px;
+  }
 }
 
-.menu__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .menu__item:first-child {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__item:first-child {
+    margin-left: 0;
+  }
 }
 
 .menu {
@@ -199,9 +212,8 @@ header {
 }
 @media screen and (min-width: 768px) {
   .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -231,20 +243,50 @@ header {
 
 .contacts--link1, .contacts--link2 {
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .contacts--link1, .contacts--link2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts--link1, .contacts--link2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contacts--link1:hover {
   fill: #2196F3;
 }
 
-.header__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* padding-top: 10px; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .header__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* padding-top: 10px; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__item:nth-child(2) {
+  margin-top: 10px;
 }
 
 .contacts--link2:hover {
