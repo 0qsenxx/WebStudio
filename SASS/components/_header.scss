@@ -10,9 +10,11 @@ header .container{
 
 .menu__list{
 
-    @media screen and (min-width: 480px) {
-        display: none;
-    }
+    display: none;
+
+    // @media screen and (min-width: 480px) {
+    //     display: none;
+    // }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -29,8 +31,8 @@ header .container{
 
 .menu__item{
 
-    @media screen and (min-width: 480px){
-    }
+    // @media screen and (min-width: 480px){
+    // }
 
     @media screen and (min-width: 768px){
         margin-left: 51px;
@@ -43,8 +45,8 @@ header .container{
 
 .menu__item:first-child{
 
-    @media screen and (min-width: 480px){
-    }
+    // @media screen and (min-width: 480px){
+    // }
 
     @media screen and (min-width: 768px){
         margin-left: 88px;
@@ -80,6 +82,8 @@ line-height: 31px;
 letter-spacing: 0.03em;
 color: #000000;
 text-decoration: none;
+display: block;
+margin-right: auto;
 }
 
 .menu--link{
@@ -130,9 +134,11 @@ padding-bottom: 31px;
 
 .header__list{
 
-    @media screen and (min-width: 480px) {
-        display: none;
-    }
+    display: none;
+
+    // @media screen and (min-width: 480px) {
+    //     display: none;
+    // }
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -164,8 +170,8 @@ padding-bottom: 31px;
     margin-right: 10px;
     display: flex;
 
-    @media screen and (min-width: 480px){
-    }
+    // @media screen and (min-width: 480px){
+    // }
 
     @media screen and (min-width: 768px){
         font-weight: 500;
@@ -195,12 +201,12 @@ padding-bottom: 31px;
 
 .header__item{
 
-    @media screen and (min-width: 480px){
-    }
+    // @media screen and (min-width: 480px){
+    // }
 
-    @media screen and (min-width: 768px){
+    // @media screen and (min-width: 768px){
         
-    }
+    // }
 
     @media screen and (min-width: 1200px){
         display: flex;
@@ -224,4 +230,25 @@ padding-bottom: 31px;
 .header--picture{
     margin-right: 10px;
     
+}
+
+.mobile__btn{
+    border: none;
+    background-color: #fff;
+    margin-left: 276px;
+    display: block;
+
+    // @media screen and (min-width: 480px){
+    //     border: none;
+    //     background-color: #fff;
+    //     margin-left: 276px;
+    // }
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px){
+    }
+
 }

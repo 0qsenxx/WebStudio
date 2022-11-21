@@ -1,9 +1,12 @@
 .tehnology{
 
-    @media screen and (min-width: 480px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    // @media screen and (min-width: 480px){
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
 
     @media screen and (min-width: 768px){
         
@@ -17,17 +20,27 @@
 
 .tehnology__title{
 
-@media screen and (min-width:480px){
     font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin-bottom: 10px;
-color: #212121;
-margin-top: 30px;
-}
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+    margin-top: 30px;
+
+// @media screen and (min-width:480px){
+//     font-weight: 700;
+// font-size: 14px;
+// line-height: 16px;
+// text-align: center;
+// letter-spacing: 0.03em;
+// text-transform: uppercase;
+// margin-bottom: 10px;
+// color: #212121;
+// margin-top: 30px;
+// }
 
 @media screen and (min-width:768px){
     text-align: left;
@@ -40,10 +53,13 @@ line-height: 1.1em;
 
 .tehnology__list{
 
-    @media screen and (min-width: 480px){
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // @media screen and (min-width: 480px){
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
 
     @media screen and (min-width: 768px){
         flex-wrap: wrap;
@@ -55,11 +71,13 @@ line-height: 1.1em;
 }
 
 .tehnology__item{
+    width: 450px;
+    margin-top: 30px;
 
-    @media screen and (min-width: 480px){
-        width: 450px;
-        margin-top: 30px;
-    }
+    // @media screen and (min-width: 480px){
+    //     width: 450px;
+    //     margin-top: 30px;
+    // }
 
     @media screen and (min-width: 768px){
         width: 354px;
@@ -71,6 +89,7 @@ line-height: 1.1em;
         width: 270px;
         margin-left: 30px;
         margin-top: 0;
+        margin-right: 0;
     }
 
 }
@@ -81,8 +100,7 @@ line-height: 1.1em;
 
 .tehnology__item:nth-child(1)::before{
 
-    @media screen and (min-width: 480px){
-        content:"";
+    content:"";
         display: block;
         width: 450px;
         height: 120px;
@@ -90,7 +108,17 @@ line-height: 1.1em;
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
-    }
+
+    // @media screen and (min-width: 480px){
+    //     content:"";
+    //     display: block;
+    //     width: 450px;
+    //     height: 120px;
+    //     background-image: url("../../images/antenna1.png");
+    //     background-color: #F5F4FA;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
     @media screen and (min-width: 768px){
         content:"";
@@ -117,8 +145,7 @@ line-height: 1.1em;
 
 .tehnology__item:nth-child(2)::before{
 
-    @media screen and (min-width: 480px){
-        content:"";
+    content:"";
         display: block;
         width: 450px;
         height: 120px;
@@ -126,7 +153,17 @@ line-height: 1.1em;
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
-    }
+
+    // @media screen and (min-width: 480px){
+    //     content:"";
+    //     display: block;
+    //     width: 450px;
+    //     height: 120px;
+    //     background-image: url("../../images/Vector.png");
+    //     background-color: #F5F4FA;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
     @media screen and (min-width: 768px){
         content:"";
@@ -153,8 +190,7 @@ line-height: 1.1em;
 
 .tehnology__item:nth-child(3)::before{
 
-    @media screen and (min-width: 480px){
-        content:"";
+    content:"";
         display: block;
         width: 450px;
         height: 120px;
@@ -162,7 +198,17 @@ line-height: 1.1em;
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
-    }
+
+    // @media screen and (min-width: 480px){
+    //     content:"";
+    //     display: block;
+    //     width: 450px;
+    //     height: 120px;
+    //     background-image: url("../../images/Vector\ \(1\).png");
+    //     background-color: #F5F4FA;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
     @media screen and (min-width: 768px){
         content:"";
@@ -189,8 +235,7 @@ line-height: 1.1em;
 
 .tehnology__item:nth-child(4)::before{
 
-    @media screen and (min-width: 480px){
-        content:"";
+    content:"";
         display: block;
         width: 450px;
         height: 120px;
@@ -198,7 +243,17 @@ line-height: 1.1em;
         background-color: #F5F4FA;
         background-repeat: no-repeat;
         background-position: center;
-    }
+
+    // @media screen and (min-width: 480px){
+    //     content:"";
+    //     display: block;
+    //     width: 450px;
+    //     height: 120px;
+    //     background-image: url("../..//images/astronauе\ 1.png");
+    //     background-color: #F5F4FA;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
     @media screen and (min-width: 768px){
         content:"";
@@ -229,9 +284,11 @@ line-height: 1.1em;
 
 .tehnology__item{
 
-    @media screen and (min-width: 480px){
-        margin-left: 0;
-    }
+    margin-left: 0;
+
+    // @media screen and (min-width: 480px){
+    //     margin-left: 0;
+    // }
 
     @media screen and (min-width: 768px){
         

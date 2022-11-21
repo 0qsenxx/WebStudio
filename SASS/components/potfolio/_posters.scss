@@ -6,16 +6,68 @@
 }
 
 img{
-    width: 370px;
+
+    @media screen and (min-width: 480px){
+        width: 415px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 370px;
+    }
 }
 
 .posters__item{
-    box-sizing: border-box;
-    background: #FFFFFF;
-border: 1px solid #EEEEEE;
-    width: 370px;
-    margin: 15px;
-    position: relative;
+
+    @media screen and (min-width: 480px){
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        position: relative;
+        width: 415px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 370px;
+        margin: 15px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.posters__item:first-child{
+
+    @media screen and (min-width: 480px){
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 768px){
+    }
+
+    @media screen and (min-width: 1200px){
+    }
+}
+
+.posters__item:nth-child(2){
+    @media screen and (min-width: 480px){
+    }
+
+    @media screen and (min-width: 768px){
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px){
+    }
+
 }
 
 .posters__item:hover{
