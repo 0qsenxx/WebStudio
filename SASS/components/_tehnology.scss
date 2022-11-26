@@ -1,323 +1,151 @@
-.tehnology{
+.tehnology {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    // @media screen and (min-width: 480px){
-    //     padding-top: 60px;
-    //     padding-bottom: 60px;
-    // }
-
-    @media screen and (min-width: 768px){
-        
-    }
-
-    @media screen and (min-width: 1200px){
-        padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
     padding-bottom: 94px;
-    }
+  }
 }
 
-.tehnology__title{
+.tehnology__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #212121;
+  margin-top: 30px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #212121;
-    margin-top: 30px;
-
-// @media screen and (min-width:480px){
-//     font-weight: 700;
-// font-size: 14px;
-// line-height: 16px;
-// text-align: center;
-// letter-spacing: 0.03em;
-// text-transform: uppercase;
-// margin-bottom: 10px;
-// color: #212121;
-// margin-top: 30px;
-// }
-
-@media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.1em;
+  }
 }
 
-@media screen and (min-width:1200px){
-line-height: 1.1em;
-}
-}
+.tehnology__list {
+  flex-wrap: wrap;
+  justify-content: center;
 
-.tehnology__list{
-
-    flex-wrap: wrap;
-    justify-content: center;
-
-    // @media screen and (min-width: 480px){
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    // }
-
-    @media screen and (min-width: 768px){
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px){
-        display: flex;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-.tehnology__item{
+.tehnology__item {
+  width: 450px;
+  margin-top: 30px;
+  margin-left: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    display: inline-block;
+    margin-right: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:nth-child(1)::before {
+    content: '';
+    display: block;
     width: 450px;
-    margin-top: 30px;
+    height: 120px;
+    background-image: url('../../images/antenna1.png');
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    // @media screen and (min-width: 480px){
-    //     width: 450px;
-    //     margin-top: 30px;
-    // }
-
-    @media screen and (min-width: 768px){
-        width: 354px;
-        display: inline-block;
-        margin-right: 13px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
     }
 
-    @media screen and (min-width: 1200px){
-        width: 270px;
-        margin-left: 30px;
-        margin-top: 0;
-        margin-right: 0;
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url('../../images/Vector.png');
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
     }
 
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
+  }
+
+  &:nth-child(3)::before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url('../../images/Vector\ \(1\).png');
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
+  }
+
+  &:nth-child(4)::before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 120px;
+    background-image: url('../..//images/astronauе\ 1.png');
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+    }
+  }
 }
 
-// .tehnology__item:nth-child(2){
-//     margin-left: 0;
-// }
-
-.tehnology__item:nth-child(1)::before{
-
-    content:"";
-        display: block;
-        width: 450px;
-        height: 120px;
-        background-image: url("../../images/antenna1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    // @media screen and (min-width: 480px){
-    //     content:"";
-    //     display: block;
-    //     width: 450px;
-    //     height: 120px;
-    //     background-image: url("../../images/antenna1.png");
-    //     background-color: #F5F4FA;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
-
-    @media screen and (min-width: 768px){
-        content:"";
-        display: block;
-        width: 354px;
-        height: 120px;
-        background-image: url("../../images/antenna1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    @media screen and (min-width: 1200px){
-        content:"";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-image: url("../../images/antenna1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.tehnology__item:nth-child(2)::before{
-
-    content:"";
-        display: block;
-        width: 450px;
-        height: 120px;
-        background-image: url("../../images/Vector.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    // @media screen and (min-width: 480px){
-    //     content:"";
-    //     display: block;
-    //     width: 450px;
-    //     height: 120px;
-    //     background-image: url("../../images/Vector.png");
-    //     background-color: #F5F4FA;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
-
-    @media screen and (min-width: 768px){
-        content:"";
-        display: block;
-        width: 354px;
-        height: 120px;
-        background-image: url("../../images/Vector.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    @media screen and (min-width: 1200px){
-        content:"";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-image: url("../../images/Vector.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.tehnology__item:nth-child(3)::before{
-
-    content:"";
-        display: block;
-        width: 450px;
-        height: 120px;
-        background-image: url("../../images/Vector\ \(1\).png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    // @media screen and (min-width: 480px){
-    //     content:"";
-    //     display: block;
-    //     width: 450px;
-    //     height: 120px;
-    //     background-image: url("../../images/Vector\ \(1\).png");
-    //     background-color: #F5F4FA;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
-
-    @media screen and (min-width: 768px){
-        content:"";
-        display: block;
-        width: 354px;
-        height: 120px;
-        background-image: url("../../images/Vector\ \(1\).png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    @media screen and (min-width: 1200px){
-        content:"";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-image: url("../../images/Vector\ \(1\).png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.tehnology__item:nth-child(4)::before{
-
-    content:"";
-        display: block;
-        width: 450px;
-        height: 120px;
-        background-image: url("../..//images/astronauе\ 1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    // @media screen and (min-width: 480px){
-    //     content:"";
-    //     display: block;
-    //     width: 450px;
-    //     height: 120px;
-    //     background-image: url("../..//images/astronauе\ 1.png");
-    //     background-color: #F5F4FA;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    // }
-
-    @media screen and (min-width: 768px){
-        content:"";
-        display: block;
-        width: 354px;
-        height: 120px;
-        background-image: url("../../images/astronauе\ 1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    @media screen and (min-width: 1200px){
-        content:"";
-        display: block;
-        width: 270px;
-        height: 120px;
-        background-image: url("../../images/astronauе\ 1.png");
-        background-color: #F5F4FA;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-// .tehnology__item:first-child{
-//     margin-left: 0;
-// }
-
-.tehnology__item{
-
-    margin-left: 0;
-
-    // @media screen and (min-width: 480px){
-    //     margin-left: 0;
-    // }
-
-    @media screen and (min-width: 768px){
-        
-    }
-
-    @media screen and (min-width: 1200px){
-        margin-left: 30px;
-    }
-
-}
-
-.tehnology__item:first-child{
-    margin-left: 0;
-}
-
-.tehnology__description{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7em;
-letter-spacing: 0.03em;
-color: #757575;
-
-@media screen and (min-width: 480px){
-}
-
-@media screen and (min-width: 768px){
-}
-
-@media screen and (min-width: 1200px){
-}
-
+.tehnology__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  color: #757575;
 }

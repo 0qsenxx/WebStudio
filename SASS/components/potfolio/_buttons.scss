@@ -1,105 +1,90 @@
-main{
+main {
+  padding-top: 60px;
 
-    @media screen and (min-width: 480px){
-        padding-top: 60px;
-    }
-
-    @media screen and (min-width: 768px){
-        padding-top: 60px;
-    }
-
-    @media screen and (min-width: 1200px){
-        padding-top: 90px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+  }
 }
 
-.main--button{
-    font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-background: #F5F4FA;
-border: none;
-padding: 6px 22px;
-border-radius: 5px;
+.main--button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border: none;
+  padding: 6px 22px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #2196f3;
+  }
 }
 
-.buttons__item{
-    margin-left: 8px;
+.buttons__item {
+  margin-left: 8px;
+  margin-top: 15px;
 
-    @media screen and (min-width: 480px){
-        margin-top: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+
+  &:nth-child(4) {
+    margin-left: -20px;
+
+    @media screen and (min-width: 480px) {
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
     }
 
-    @media screen and (min-width: 1200px){
-        margin-top: 0;
+    @media screen and (min-width: 1200px) {
+      margin-left: 8px;
     }
+  }
+
+  &:nth-child(3) {
+    margin-right: 40px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  &:first-child {
+    margin-left: -20px;
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+  }
 }
 
-.buttons__item:nth-child(4){
-    @media screen and (min-width: 480px){
-        margin-left: -20px;
-    }
+.buttons__list {
+  display: flex;
+  flex-wrap: wrap;
 
-    @media screen and (min-width: 768px){
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 96px;
+  }
 
-    @media screen and (min-width: 1200px){
-        margin-left: 8px;
-    }
-}
-
-.buttons__item:nth-child(3){
-
-    @media screen and (min-width: 480px){
-        margin-right:40px;
-    }
-
-    @media screen and (min-width: 768px){
-    }
-
-    @media screen and (min-width: 1200px){
-        margin-right: 0;
-    }
-}
-
-.buttons__item:first-child{
-
-    @media screen and (min-width: 480px){
-        margin-left: -20px;
-    }
-
-    @media screen and (min-width: 768px){
-    }
-
-    @media screen and (min-width: 1200px){
-    }
-}
-
-.main--button:hover{
-    background-color: #2196F3;
-}
-
-.buttons__list{
-
-    @media screen and (min-width: 480px){
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 768px){
-        margin-top: 0;
-        margin-left: 96px;
-    }
-
-    @media screen and (min-width: 1200px){
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
 }

@@ -25,17 +25,15 @@
 font-size: 40px;
 line-height: 47px;
 letter-spacing: 0.02em;
-
 color: #212121;
-}
 
-.mobile-modal__link:hover{
+&:hover{
     color: #2196F3;
+}
 }
 
 .mobile-modal__item:first-child{
-    margin-top: 48px;
-    margin-bottom: 35.71px;
+    margin-bottom: 36px;
 }
 
 .mobile-modal__item:nth-child(2){
@@ -44,10 +42,7 @@ color: #212121;
 
 .mobile-modal__list{
     margin-left: 40px;
-}
-
-.mobile-modal__item:last-child{
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 
 .mobile-modal__tel{
@@ -57,8 +52,16 @@ line-height: 40px;
 letter-spacing: 0.02em;
 color: #2196F3;
 margin-left: 40px;
-display: block;
 margin-bottom: 30px;
+}
+
+.mobile-modal-addres__list{
+    margin-top: 302px;
+    margin-bottom: 64px;
+}
+
+.mobile-modal-addres__item:first-child{
+    margin-bottom: 32px;
 }
 
 .mobile-modal__mail{
@@ -68,8 +71,6 @@ line-height: 28px;
 letter-spacing: 0.02em;
 color: #757575;
 margin-left: 40px;
-display: block;
-margin-bottom: 64px;
 }
 
 .mobile-modal-social__list{
@@ -84,23 +85,26 @@ line-height: 22px;
 letter-spacing: 0.02em;
 color: #2196F3;
 margin-left: 20px;
-}
 
-.mobile-modal-social__item:first-child{
+&:first-child{
     margin-left: 0;
 }
 
-.mobile-modal-social__item:nth-child(2)::before{
+&:nth-child(2)::before{
+    content: "";
     border-left: 1px solid #212121;
     margin-right: 10px;
 }
 
-.mobile-modal-social__item:nth-child(3)::before{
+&:nth-child(3)::before{
+    content: "";
     border-left: 1px solid #212121;
     margin-right: 10px;
 }
 
-.mobile-modal-social__item:nth-child(4)::before{
+&:nth-child(4)::before{
+    content: "";
     border-left: 1px solid #212121;
     margin-right: 10px;
+}
 }
