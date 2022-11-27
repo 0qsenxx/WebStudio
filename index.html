@@ -26,11 +26,11 @@
             <span class="black--logo">Web</span>Studio</a
           >
 
-<button class="mobile__btn" data-mobile-open>
-  <svg width="40px" height="40px">
-    <use href="./images/symbol-defs(4).svg#icon-menu_24px"></use>
-  </svg>
-</button>
+          <button class="mobile__btn" data-mobile-open>
+            <svg width="40px" height="40px">
+              <use href="./images/symbol-defs(4).svg#icon-menu_24px"></use>
+            </svg>
+          </button>
 
           <ul class="menu__list">
             <li class="menu__item">
@@ -55,7 +55,8 @@
               <svg width="16px" height="12px" class="header--picture">
                 <use
                   href="./images/symbol-defs (3).svg#icon-envelope-hover"
-                ></use></svg>
+                ></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
@@ -66,9 +67,8 @@
               href="tel:+380961111111"
             >
               <svg width="10px" height="16px" class="header--picture">
-                <use
-                  href="./images/symbol-defs (3).svg#icon-smartphone"
-                ></use></svg>
+                <use href="./images/symbol-defs (3).svg#icon-smartphone"></use>
+              </svg>
               +380961111111
             </a>
             <!-- <a class="header-contacts" href="tel:+380961111111"
@@ -374,12 +374,12 @@
             <span class="white__logo">Web</span>Studio
           </h2>
           <a
-                class="footer--link"
-                href="https://www.google.com.ua/maps/place/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80+%D0%9C%D0%92%D0%94+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8/@50.4267641,30.5365487,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!8m2!3d50.4267607!4d30.5387374?hl=ru"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+            class="footer--link"
+            href="https://www.google.com.ua/maps/place/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80+%D0%9C%D0%92%D0%94+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B9+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8/@50.4267641,30.5365487,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c9352844eb2b:0x50bd53498a7bb884!8m2!3d50.4267607!4d30.5387374?hl=ru"
+            >м. Київ, пр-т Лесі Українки, 26</a
+          >
           <ul class="footer__list">
-            <li class="footer__item">
+            <li class="footer__item"></li>
 
             <li class="footer__item">
               <a class="address" href="mailto:info@devstudio.com"
@@ -430,7 +430,8 @@
           <input type="text" placeholder="E-mail" class="footer-input" />
           <button type="button" class="footer--btn">
             <svg width="24" height="24" class="footer__button__pic">
-              <use href="./images/symbol-defs(4).svg#icon-icon-send"></use></svg>
+              <use href="./images/symbol-defs(4).svg#icon-icon-send"></use>
+            </svg>
             <span class="footer--button__text">Підписатися</span>
           </button>
         </div>
@@ -507,9 +508,17 @@
           </li>
         </ul>
         <ul class="mobile-modal-addres__list">
-        <li class="mobile-modal-addres__item"><a href="tel:+380961111111" class="mobile-modal__tel">+38 096 111 11 11</a></li>
-        <li class="mobile-modal-addres__item"><a href="mailto:info@devstudio.com" class="mobile-modal__mail">info@devstudio.com</a></li>
-      </ul>
+          <li class="mobile-modal-addres__item">
+            <a href="tel:+380961111111" class="mobile-modal__tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-modal-addres__item">
+            <a href="mailto:info@devstudio.com" class="mobile-modal__mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
         <ul class="mobile-modal-social__list">
           <li class="mobile-modal-social__item">Instagram</li>
           <li class="mobile-modal-social__item">Twitter</li>
@@ -539,20 +548,20 @@
     </script>
     <script>
       (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-mobile-open]"),
-    closeModalBtn: document.querySelector("[data-mobile-close]"),
-    modal: document.querySelector("[data-mobile]"),
-  };
+        const refs = {
+          openModalBtn: document.querySelector('[data-mobile-open]'),
+          closeModalBtn: document.querySelector('[data-mobile-close]'),
+          modal: document.querySelector('[data-mobile]'),
+        };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+        function toggleModal() {
+          document.body.classList.toggle('modal-open');
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
     </script>
   </body>
 </html>

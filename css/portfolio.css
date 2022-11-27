@@ -56,6 +56,15 @@ body {
   padding-top: 20px;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header .container {
   height: 80px;
   display: -webkit-box;
@@ -123,15 +132,6 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__logo {
@@ -224,25 +224,22 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 768px) {
-  .contacts--link1,
-.contacts--link2 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    color: #757575;
-  }
-}
 .contacts--link1:hover,
 .contacts--link2:hover {
   fill: #2196f3;
 }
 
+.header__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 @media screen and (min-width: 1200px) {
   .header__item {
     display: -webkit-box;

@@ -1,3 +1,8 @@
+header {
+  display: flex;
+  align-items: center;
+}
+
 header .container {
   height: 80px;
   display: flex;
@@ -50,11 +55,6 @@ header .container {
   display: flex;
   align-items: center;
   margin-right: auto;
-}
-
-header {
-  display: flex;
-  align-items: center;
 }
 
 .menu__logo {
@@ -122,6 +122,7 @@ letter-spacing: 0.03em; */
     text-align: center;
     display: flex;
     align-items: center;
+    
   }
 }
 
@@ -141,15 +142,15 @@ letter-spacing: 0.03em; */
   display: flex;
 
   @media screen and (min-width: 768px) {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.02em;
-    color: #757575;
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 16px;
+    // letter-spacing: 0.02em;
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 14px;
+    // letter-spacing: 0.02em;
+    // color: #757575;
   }
 
   &:hover {
@@ -158,6 +159,16 @@ letter-spacing: 0.03em; */
 }
 
 .header__item {
+
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
 
   @media screen and (min-width: 1200px) {
     display: flex;
