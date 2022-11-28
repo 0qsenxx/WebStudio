@@ -29,15 +29,11 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1025,7 +1021,7 @@ footer .container {
 }
 
 .comand__picture {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
