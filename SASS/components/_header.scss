@@ -157,22 +157,30 @@ letter-spacing: 0.03em; */
 
 .header__item {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
   color: #757575;
 
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 16px;
     display: flex;
     align-items: center;
   }
 
   &:first-child {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      margin-top: 0;
+    }
   }
 
   &:nth-child(2) {
@@ -194,7 +202,8 @@ letter-spacing: 0.03em; */
 .mobile__btn {
   border: none;
   background-color: #fff;
-  margin-left: 276px;
+  // margin-left: 276px;
+  margin-left: auto;
   display: block;
 
   @media screen and (min-width: 768px) {

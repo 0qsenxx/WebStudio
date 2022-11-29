@@ -28,11 +28,15 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -230,17 +234,18 @@ header .container {
 
 .header__item {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.02em;
   color: #757575;
 }
 @media screen and (min-width: 1200px) {
   .header__item {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -249,8 +254,16 @@ header .container {
             align-items: center;
   }
 }
-.header__item:first-child {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .header__item:first-child {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item:first-child {
+    margin-right: 30px;
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__item:nth-child(2) {
@@ -271,7 +284,7 @@ header .container {
 .mobile__btn {
   border: none;
   background-color: #fff;
-  margin-left: 276px;
+  margin-left: auto;
   display: block;
 }
 @media screen and (min-width: 768px) {
@@ -768,7 +781,7 @@ footer .container {
 }
 
 .footer-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -778,6 +791,11 @@ footer .container {
   color: #fff;
   margin-top: 20px;
   padding-left: 18px;
+}
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-input {
@@ -826,9 +844,7 @@ footer .container {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
   position: relative;
-  margin-left: 125px;
 }
 @media screen and (min-width: 768px) {
   .footer--btn {
@@ -841,6 +857,9 @@ footer .container {
   }
 }
 
+.footer__mailing {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .footer__mailing {
     padding-top: 12px;

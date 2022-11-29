@@ -148,7 +148,7 @@ footer .container {
 }
 
 .footer-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -158,6 +158,10 @@ footer .container {
   color: #fff;
   margin-top: 20px;
   padding-left: 18px;
+
+  @media screen and (min-width: 480px){
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 151px;
@@ -199,9 +203,7 @@ footer .container {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
   position: relative;
-  margin-left: 125px;
 
   @media screen and (min-width: 768px) {
     margin-left: 270px;
@@ -213,6 +215,8 @@ footer .container {
 }
 
 .footer__mailing {
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     padding-top: 12px;
   }
