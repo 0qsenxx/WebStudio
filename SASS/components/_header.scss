@@ -30,7 +30,6 @@ header .container {
 }
 
 .menu__item {
-
   @media screen and (min-width: 768px) {
     margin-left: 51px;
   }
@@ -41,7 +40,6 @@ header .container {
 }
 
 .menu__item:first-child {
-
   @media screen and (min-width: 768px) {
     margin-left: 88px;
   }
@@ -122,12 +120,11 @@ letter-spacing: 0.03em; */
     text-align: center;
     display: flex;
     align-items: center;
-    
   }
 }
 
 .header--contacts {
-  color: #2f303a;
+  color: #757575;
   display: block;
 
   &:hover {
@@ -137,9 +134,9 @@ letter-spacing: 0.03em; */
 
 .contacts--link1,
 .contacts--link2 {
-
   margin-right: 10px;
   display: flex;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     // font-weight: 500;
@@ -159,16 +156,15 @@ letter-spacing: 0.03em; */
 }
 
 .header__item {
-
   font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -176,12 +172,18 @@ letter-spacing: 0.03em; */
   }
 
   &:first-child {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   &:nth-child(2) {
-    margin-top: 10px;
-    margin-right: 10px;
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
   }
 }
 
