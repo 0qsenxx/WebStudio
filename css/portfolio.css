@@ -28,14 +28,14 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -148,8 +148,6 @@ header .container {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
-  display: block;
-  margin-right: auto;
 }
 
 .menu--link {
@@ -797,11 +795,6 @@ footer .container {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-input {
-    margin-left: 151px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-input {
     width: 358px;
@@ -845,11 +838,6 @@ footer .container {
   letter-spacing: 0.06em;
   color: #ffffff;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .footer--btn {
-    margin-left: 270px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer--btn {

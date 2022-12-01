@@ -16,8 +16,6 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -26,27 +24,70 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   padding-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 23px;
+  }
 }
 
 .input1 {
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-top: 30px;
   margin-top: 4px;
-  margin-left: 41px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  // margin-left: 40px;
+  // margin-right: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .input__name1 {
@@ -55,30 +96,46 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-left: 41px;
+  margin-left: auto;
   margin-top: 12px;
 }
 
 .comment-input {
-  width: 448px;
+  width: 100%;
   height: 120px;
-  margin-left: 41px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 16px;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    height: 120px;
+  }
 }
 
 .condition {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 1px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1px;
+  }
 }
 
 .condition-span {
@@ -103,24 +160,39 @@
   padding-bottom: 10px;
   padding-right: 58px;
   padding-left: 58px;
-  margin-left: 165px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .checkbox {
-  margin-left: 54px;
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 452px;
+  margin-top: 484px;
+  margin-left: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 54px;
+    margin-top: 475px;
+  }
 }
 
 .modal-svg1 {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 104px;
+  margin-top: 141px;
   margin-left: 53px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 126px;
+  }
 
   &:hover {
     fill: #2196f3;
@@ -131,8 +203,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 174px;
+  margin-top: 211px;
   margin-left: 53px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 196px;
+  }
 
   &:hover {
     fill: #2196f3;
@@ -143,8 +219,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 243px;
+  margin-top: 280px;
   margin-left: 53px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 266px;
+  }
 
   &:hover {
     fill: #2196f3;

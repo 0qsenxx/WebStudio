@@ -29,14 +29,14 @@ body {
 
 .container {
   /* outline: 2px solid red; */
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -149,8 +149,6 @@ header .container {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
-  display: block;
-  margin-right: auto;
 }
 
 .menu--link {
@@ -658,11 +656,6 @@ footer .container {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-input {
-    margin-left: 151px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-input {
     width: 358px;
@@ -706,11 +699,6 @@ footer .container {
   letter-spacing: 0.06em;
   color: #ffffff;
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .footer--btn {
-    margin-left: 270px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer--btn {
@@ -1264,8 +1252,6 @@ footer .container {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1275,27 +1261,61 @@ footer .container {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   padding-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 23px;
+  }
 }
 
 .input1 {
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-top: 30px;
   margin-top: 4px;
-  margin-left: 41px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+}
+@media screen and (min-width: 480px) {
+  .input1 {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input1 {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .input__name1 {
@@ -1304,30 +1324,46 @@ footer .container {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-left: 41px;
+  margin-left: auto;
   margin-top: 12px;
 }
 
 .comment-input {
-  width: 448px;
+  width: 100%;
   height: 120px;
-  margin-left: 41px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 16px;
 }
+@media screen and (min-width: 480px) {
+  .comment-input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-input {
+    width: 448px;
+    height: 120px;
+  }
+}
 
 .condition {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 1px;
+}
+@media screen and (min-width: 1200px) {
+  .condition {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1px;
+  }
 }
 
 .condition-span {
@@ -1358,24 +1394,42 @@ footer .container {
   padding-bottom: 10px;
   padding-right: 58px;
   padding-left: 58px;
-  margin-left: 165px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .send-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .checkbox {
-  margin-left: 54px;
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 452px;
+  margin-top: 484px;
+  margin-left: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-left: 54px;
+    margin-top: 475px;
+  }
 }
 
 .modal-svg1 {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 104px;
+  margin-top: 141px;
   margin-left: 53px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-svg1 {
+    margin-top: 126px;
+  }
 }
 .modal-svg1:hover {
   fill: #2196f3;
@@ -1385,8 +1439,13 @@ footer .container {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 174px;
+  margin-top: 211px;
   margin-left: 53px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-svg2 {
+    margin-top: 196px;
+  }
 }
 .modal-svg2:hover {
   fill: #2196f3;
@@ -1396,8 +1455,13 @@ footer .container {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 243px;
+  margin-top: 280px;
   margin-left: 53px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-svg3 {
+    margin-top: 266px;
+  }
 }
 .modal-svg3:hover {
   fill: #2196f3;
