@@ -1,6 +1,7 @@
 header {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 header .container {
@@ -201,9 +202,8 @@ letter-spacing: 0.03em; */
 .mobile__btn {
   border: none;
   background-color: #fff;
-  // margin-left: 276px;
-  margin-left: auto;
-  display: block;
+  position: absolute;
+  right: 15px;
 
   @media screen and (min-width: 768px) {
     display: none;

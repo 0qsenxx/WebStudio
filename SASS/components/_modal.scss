@@ -234,12 +234,16 @@
 .close-modal {
   margin-left: 496px;
   margin-top: 14px;
-  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
   border-radius: 50%;
   padding: 6px;
   position: absolute;
   top: 0;
   right: 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     fill: #2196f3;
