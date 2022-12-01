@@ -1,18 +1,23 @@
 .mobile-modal{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     background-color: #fff;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 48px;
 }
 
 .close__modal{
     border: none;
     background-color: #fff;
-    margin-left: 465px;
-    margin-top: 21px;
+    position: absolute;
+    top: 21px;
+    right: 15px;
 }
 
 .backdrop.is-hidden {
@@ -56,7 +61,6 @@ margin-bottom: 30px;
 }
 
 .mobile-modal-addres__list{
-    margin-top: 302px;
     margin-bottom: 64px;
 }
 
