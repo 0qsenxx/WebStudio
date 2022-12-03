@@ -824,6 +824,9 @@ footer .container {
     margin-right: 0;
   }
 }
+.tehnology__item:nth-child(2n) {
+  margin-right: 0;
+}
 .tehnology__item::before {
   content: "";
   display: block;

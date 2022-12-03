@@ -42,6 +42,10 @@ main {
   &:nth-child(3) {
     margin-right: 40px;
 
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+
     @media screen and (min-width: 1200px) {
       margin-right: 0;
     }
@@ -55,7 +59,8 @@ main {
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
-    margin-left: 96px;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (min-width: 1200px) {

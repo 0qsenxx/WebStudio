@@ -459,6 +459,11 @@ main {
 .buttons__item:nth-child(3) {
   margin-right: 40px;
 }
+@media screen and (min-width: 768px) {
+  .buttons__item:nth-child(3) {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .buttons__item:nth-child(3) {
     margin-right: 0;
@@ -475,7 +480,12 @@ main {
 @media screen and (min-width: 768px) {
   .buttons__list {
     margin-top: 0;
-    margin-left: 96px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
