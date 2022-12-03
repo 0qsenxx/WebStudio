@@ -54,12 +54,6 @@
   margin-left: 40px;
   margin-right: 40px;
 
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     line-height: 23px;
   }
@@ -87,6 +81,10 @@
   @media screen and (min-width: 1200px) {
     width: 448px;
     height: 40px;
+  }
+
+  &:focus{
+    border: #2196f3;
   }
 }
 

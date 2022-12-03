@@ -278,6 +278,7 @@ header .container {
 
 .header--picture {
   margin-right: 10px;
+  fill: #757575;
 }
 
 .mobile__btn {
@@ -320,6 +321,9 @@ header .container {
   position: absolute;
   top: 21px;
   right: 15px;
+}
+.close__modal:hover {
+  fill: #2196F3;
 }
 
 .backdrop.is-hidden {
@@ -447,9 +451,6 @@ main {
     margin-top: 0;
   }
 }
-.buttons__item:nth-child(4) {
-  margin-left: -20px;
-}
 @media screen and (min-width: 1200px) {
   .buttons__item:nth-child(4) {
     margin-left: 8px;
@@ -463,9 +464,7 @@ main {
     margin-right: 0;
   }
 }
-.buttons__item:first-child {
-  margin-left: -20px;
-}
+
 .buttons__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,7 +497,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 img {

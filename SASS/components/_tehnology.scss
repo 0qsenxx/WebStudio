@@ -31,6 +31,7 @@
 .tehnology__list {
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -41,6 +42,7 @@
   width: 100%;
   margin-top: 30px;
   margin-left: 0;
+  height: 248px;
 
   @media screen and (min-width: 768px) {
     width: 354px;

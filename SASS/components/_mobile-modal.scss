@@ -18,6 +18,10 @@
     position: absolute;
     top: 21px;
     right: 15px;
+
+    &:hover{
+        fill: #2196F3;
+    }
 }
 
 .backdrop.is-hidden {

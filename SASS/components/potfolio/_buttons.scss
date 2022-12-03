@@ -33,13 +33,6 @@ main {
   }
 
   &:nth-child(4) {
-    margin-left: -20px;
-
-    @media screen and (min-width: 480px) {
-    }
-
-    @media screen and (min-width: 768px) {
-    }
 
     @media screen and (min-width: 1200px) {
       margin-left: 8px;
@@ -49,27 +42,8 @@ main {
   &:nth-child(3) {
     margin-right: 40px;
 
-    @media screen and (min-width: 480px) {
-    }
-
-    @media screen and (min-width: 768px) {
-    }
-
     @media screen and (min-width: 1200px) {
       margin-right: 0;
-    }
-  }
-
-  &:first-child {
-    margin-left: -20px;
-
-    @media screen and (min-width: 480px) {
-    }
-
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1200px) {
     }
   }
 }
@@ -77,6 +51,7 @@ main {
 .buttons__list {
   display: flex;
   flex-wrap: wrap;
+
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
