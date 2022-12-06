@@ -63,7 +63,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 header .container {
@@ -74,6 +73,7 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .black--logo {
@@ -651,7 +651,6 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__address {
     text-align: left;
-    margin-right: 70px;
   }
 }
 
@@ -771,7 +770,7 @@ footer {
   .social__networks {
     margin-left: 70px;
     padding-top: 12px;
-    margin-right: 50px;
+    margin-right: 90px;
   }
 }
 
@@ -857,7 +856,7 @@ footer .container {
 }
 @media screen and (min-width: 1200px) {
   .footer--btn {
-    margin-left: 0;
+    margin-left: 12px;
   }
 }
 
@@ -867,6 +866,19 @@ footer .container {
 @media screen and (min-width: 1200px) {
   .footer__mailing {
     padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__mailing div {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailing div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
