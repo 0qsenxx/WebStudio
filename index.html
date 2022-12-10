@@ -442,17 +442,19 @@
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <h2 class="modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
-        <p class="input__name1">Ім’я</p>
-        <a class="modal-svg1">
-          <svg width="18px" height="18px">
-            <use
-              href="./images/symbol-defs(4).svg#icon-person-black-18dp-1"
-            ></use>
-          </svg>
-        </a>
-        <input class="input1" type="text" />
+        <label class="input__name1"> Ім’я
+          <input class="input1" type="text" />
+          <a class="modal-svg1">
+            <svg width="18px" height="18px">
+              <use
+                href="./images/symbol-defs(4).svg#icon-person-black-18dp-1"
+              ></use>
+            </svg>
+          </a>
+        </label>
 
-        <p class="input__name1">Телефон</p>
+       <label class="input__name1"> Телефон
+        <input class="input1" type="text" />
         <a class="modal-svg2">
           <svg width="18px" height="18px">
             <use
@@ -460,9 +462,10 @@
             ></use>
           </svg>
         </a>
-        <input class="input1" type="text" />
+      </label>
 
-        <p class="input__name1">Пошта</p>
+        <label class="input__name1"> Пошта
+        <input class="input1" type="text" />
         <a class="modal-svg3">
           <svg width="18px" height="18px">
             <use
@@ -470,16 +473,17 @@
             ></use>
           </svg>
         </a>
-        <input class="input1" type="text" />
+      </label>
 
         <p class="input__name1">Коментарі</p>
         <textarea class="comment-input" placeholder="Введіть текст"></textarea>
-        <br />
+        <div class="modal__checkbox">
         <input class="checkbox" type="checkbox" />
         <p class="condition">
           Погоджуюсь з розсилкою і приймаю
           <span class="condition-span">Умови договору</span>
         </p>
+      </div>
         <button class="send-button">Надіслати</button>
         <button class="close-modal" data-close-modal>
           <svg width="18px" height="18px">

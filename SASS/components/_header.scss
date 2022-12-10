@@ -81,6 +81,8 @@ letter-spacing: 0.03em; */
   color: #212121;
   position: relative;
   padding-bottom: 31px;
+  transition-delay: 50ms;
+  transition-duration: 250ms;
 
   &:hover::after {
     opacity: 1;
@@ -137,6 +139,8 @@ letter-spacing: 0.03em; */
   margin-right: 10px;
   display: flex;
   align-items: center;
+  transition-delay: 50ms;
+  transition-duration: 250ms;
 
   @media screen and (min-width: 768px) {
     // font-weight: 500;

@@ -23,7 +23,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: relative;
+  // position: relative;
   width: 100%;
   padding-right: 40px;
   padding-left: 40px;
@@ -67,8 +67,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  // margin-left: 40px;
-  // margin-right: 40px;
+  transition-delay: 50ms;
+  transition-duration: 250ms;
 
   @media screen and (min-width: 480px) {
     width: 370px;
@@ -83,8 +83,9 @@
     height: 40px;
   }
 
-  &:focus{
-    border: #2196f3;
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
   }
 }
 
@@ -96,6 +97,7 @@
   color: #757575;
   margin-left: auto;
   margin-top: 12px;
+  position: relative;
 }
 
 .comment-input {
@@ -106,17 +108,21 @@
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 16px;
+  transition-delay: 50ms;
+  transition-duration: 250ms;
 
   @media screen and (min-width: 480px) {
     width: 370px;
   }
 
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     width: 448px;
     height: 120px;
+  }
+
+  &:hover,
+  :focus {
+    border-color: #2196f3;
   }
 }
 
@@ -172,67 +178,60 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 484px;
   margin-left: 40px;
 
   @media screen and (min-width: 1200px) {
     margin-left: 54px;
-    margin-top: 475px;
+    top: auto;
   }
+}
+
+.modal__checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-svg1 {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 141px;
-  margin-left: 53px;
+  top: 28px;
+  left: 12px;
+}
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 126px;
-  }
-
-  &:hover {
-    fill: #2196f3;
-  }
+.input1:hover  + .modal-svg1, .input1:focus + .modal-svg1{
+  transition-delay: 50ms;
+  transition-duration: 250ms;
+  fill: #2196f3;
 }
 
 .modal-svg2 {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 211px;
-  margin-left: 53px;
+  top: 29px;
+  left: 12px;
+}
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 196px;
-  }
-
-  &:hover {
-    fill: #2196f3;
-  }
+.input1:hover  + .modal-svg2, .input1:focus + .modal-svg2{
+  transition-delay: 50ms;
+  transition-duration: 250ms;
+  fill: #2196f3;
 }
 
 .modal-svg3 {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 280px;
-  margin-left: 53px;
+  top: 29px;
+  left: 12px;
+}
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 266px;
-  }
-
-  &:hover {
-    fill: #2196f3;
-  }
+.input1:hover  + .modal-svg3, .input1:focus + .modal-svg3{
+  transition-delay: 50ms;
+  transition-duration: 250ms;
+  fill: #2196f3;
 }
 
 .close-modal {
   margin-left: 496px;
   margin-top: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.1);;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
   position: absolute;
@@ -242,6 +241,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-delay: 50ms;
+  transition-duration: 250ms;
 
   &:hover {
     fill: #2196f3;

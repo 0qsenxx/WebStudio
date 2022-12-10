@@ -159,6 +159,10 @@ header .container {
   color: #212121;
   position: relative;
   padding-bottom: 31px;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 .menu--link:hover::after {
   opacity: 1;
@@ -225,6 +229,10 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 .contacts--link1:hover,
 .contacts--link2:hover {
@@ -295,7 +303,7 @@ header .container {
 
 .mobile-modal {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   background-color: #fff;
   -webkit-transform: translate(-50%, -50%);
@@ -329,6 +337,14 @@ header .container {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .mobile-modal__link {
@@ -436,6 +452,10 @@ main {
   border: none;
   padding: 6px 22px;
   border-radius: 5px;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 .main--button:hover {
   background-color: #2196f3;
@@ -583,8 +603,8 @@ img {
 
 .overlay {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 75%;
   top: 0;
   left: 0;
   right: 0;
@@ -599,8 +619,9 @@ img {
   transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
   transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
 }
-.overlay:hover {
-  /* opacity: 1; */
+
+.posters__item:hover .overlay {
+  opacity: 1;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translate(0);
           transform: translate(0);
@@ -608,7 +629,6 @@ img {
   padding-top: 63px;
   padding-left: 24px;
   padding-right: 24px;
-  opacity: 1;
 }
 
 .overlay__text {
