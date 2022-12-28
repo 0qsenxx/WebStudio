@@ -175,14 +175,10 @@
 }
 
 .checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 40px;
+  margin-right: 8px;
+  margin-top: 20px;
 
   @media screen and (min-width: 1200px) {
-    margin-left: 54px;
-    top: auto;
   }
 }
 
@@ -248,4 +244,10 @@
     fill: #2196f3;
     border-color: #2196f3;
   }
+}
+
+.modal__checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
