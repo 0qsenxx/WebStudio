@@ -20,7 +20,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -64,6 +64,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 header .container {
@@ -294,7 +295,7 @@ header .container {
   border: none;
   background-color: #fff;
   position: absolute;
-  right: 15px;
+  right: -15px;
 }
 @media screen and (min-width: 768px) {
   .mobile__btn {
@@ -437,8 +438,6 @@ header .container {
   height: 400px;
   background-color: #2f303a;
   text-align: center;
-  padding-left: 60px;
-  padding-right: 60px;
   padding-bottom: 118px;
   padding-top: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/-mobile@1x.jpg);
@@ -486,6 +485,8 @@ header .container {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -688,6 +689,10 @@ footer .container {
   color: #fff;
   margin-top: 20px;
   padding-left: 18px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 @media screen and (min-width: 480px) {
   .footer-input {
@@ -699,6 +704,10 @@ footer .container {
     width: 358px;
     margin-left: 0;
   }
+}
+.footer-input:hover,
+.footer-input :focus {
+  border-color: #2196f3;
 }
 
 .title-input-text {
@@ -757,12 +766,12 @@ footer .container {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__mailing div {
+  .footer__mailing form {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__mailing div {
+  .footer__mailing form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1137,6 +1146,9 @@ footer .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 

@@ -1,6 +1,7 @@
 header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 header .container {
@@ -142,18 +143,6 @@ letter-spacing: 0.03em; */
   transition-delay: 50ms;
   transition-duration: 250ms;
 
-  @media screen and (min-width: 768px) {
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 16px;
-    // letter-spacing: 0.02em;
-    // font-weight: 500;
-    // font-size: 12px;
-    // line-height: 14px;
-    // letter-spacing: 0.02em;
-    // color: #757575;
-  }
-
   &:hover {
     fill: #2196f3;
   }
@@ -208,7 +197,7 @@ letter-spacing: 0.03em; */
   border: none;
   background-color: #fff;
   position: absolute;
-  right: 15px;
+  right: -15px;
 
   @media screen and (min-width: 768px) {
     display: none;

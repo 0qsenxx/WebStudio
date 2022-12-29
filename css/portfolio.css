@@ -19,7 +19,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -63,6 +63,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 header .container {
@@ -293,7 +294,7 @@ header .container {
   border: none;
   background-color: #fff;
   position: absolute;
-  right: 15px;
+  right: -15px;
 }
 @media screen and (min-width: 768px) {
   .mobile__btn {
@@ -476,19 +477,6 @@ main {
     margin-left: 8px;
   }
 }
-.buttons__item:nth-child(3) {
-  margin-right: 40px;
-}
-@media screen and (min-width: 768px) {
-  .buttons__item:nth-child(3) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .buttons__item:nth-child(3) {
-    margin-right: 0;
-  }
-}
 
 .buttons__list {
   display: -webkit-box;
@@ -530,6 +518,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
 }
 
 img {
@@ -553,8 +542,7 @@ img {
   border: 1px solid #eeeeee;
   position: relative;
   width: 415px;
-  margin-left: 15px;
-  margin-top: 30px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .posters__item {
@@ -564,13 +552,12 @@ img {
 @media screen and (min-width: 1200px) {
   .posters__item {
     width: 370px;
-    margin: 15px;
-    margin-left: 0;
     margin-top: 0;
   }
 }
 .posters__item:first-child {
   margin-top: 0;
+  margin-left: 0;
 }
 @media screen and (min-width: 768px) {
   .posters__item:nth-child(2) {
@@ -821,6 +808,10 @@ footer .container {
   color: #fff;
   margin-top: 20px;
   padding-left: 18px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 @media screen and (min-width: 480px) {
   .footer-input {
@@ -832,6 +823,10 @@ footer .container {
     width: 358px;
     margin-left: 0;
   }
+}
+.footer-input:hover,
+.footer-input :focus {
+  border-color: #2196f3;
 }
 
 .title-input-text {
@@ -890,12 +885,12 @@ footer .container {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__mailing div {
+  .footer__mailing form {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__mailing div {
+  .footer__mailing form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

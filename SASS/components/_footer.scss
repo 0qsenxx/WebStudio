@@ -153,6 +153,8 @@ footer .container {
   color: #fff;
   margin-top: 20px;
   padding-left: 18px;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 
   @media screen and (min-width: 480px){
     width: 450px;
@@ -161,6 +163,11 @@ footer .container {
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-left: 0;
+  }
+
+  &:hover,
+  :focus {
+    border-color: #2196f3;
   }
 }
 
@@ -213,7 +220,7 @@ footer .container {
   }
 }
 
-.footer__mailing div{
+.footer__mailing form{
 
   @media screen and (min-width: 768px) {
     display: block;
