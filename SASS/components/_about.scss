@@ -25,6 +25,13 @@
   width: 370px;
   margin-left: 30px;
   position: relative;
+  // -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  // transition: transform 0.8s ease-in-out;
+
+  // &:hover {
+  //   -webkit-transform: rotate(360deg);
+  //   transform: rotate(360deg);
+  // }
 }
 
 .about__item:nth-child(1):before {

@@ -167,6 +167,14 @@
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
   @media screen and (min-width: 480px) {
     margin-left: auto;
@@ -251,3 +259,5 @@
   align-items: center;
   justify-content: center;
 }
+
+

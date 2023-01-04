@@ -144,7 +144,7 @@ letter-spacing: 0.03em; */
   transition-duration: 250ms;
 
   &:hover {
-    fill: #2196f3;
+    fill: currentColor;
   }
 }
 
@@ -191,15 +191,29 @@ letter-spacing: 0.03em; */
 .header--picture {
   margin-right: 10px;
   fill: #757575;
+  fill: currentColor;
+
+  &:hover{
+    fill: currentColor;
+  }
 }
 
 .mobile__btn {
   border: none;
   background-color: #fff;
   position: absolute;
-  right: -15px;
+  right: -290px;
+  top: 10px;
+
+  @media screen and (min-width: 480px) {
+    right: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.active-page{
+  color: #2196f3;
 }

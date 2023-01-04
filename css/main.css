@@ -238,7 +238,7 @@ header .container {
 }
 .contacts--link1:hover,
 .contacts--link2:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .header__item {
@@ -289,18 +289,32 @@ header .container {
 .header--picture {
   margin-right: 10px;
   fill: #757575;
+  fill: currentColor;
+}
+.header--picture:hover {
+  fill: currentColor;
 }
 
 .mobile__btn {
   border: none;
   background-color: #fff;
   position: absolute;
-  right: -15px;
+  right: -290px;
+  top: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mobile__btn {
+    right: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile__btn {
     display: none;
   }
+}
+
+.active-page {
+  color: #2196f3;
 }
 
 .mobile-modal {
@@ -440,6 +454,8 @@ header .container {
   text-align: center;
   padding-bottom: 118px;
   padding-top: 118px;
+  max-width: 1600px;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/-mobile@1x.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/-mobile@1x.jpg);
 }
@@ -487,11 +503,13 @@ header .container {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 60px;
+    max-width: 696px;
   }
 }
 
@@ -509,6 +527,13 @@ header .container {
   border: none;
   border-radius: 4px;
   /* pointer-events: none; */
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.hero__btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 footer {
@@ -708,6 +733,7 @@ footer .container {
 .footer-input:hover,
 .footer-input :focus {
   border-color: #2196f3;
+  height: 100px;
 }
 
 .title-input-text {
@@ -749,11 +775,17 @@ footer .container {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 1200px) {
   .footer--btn {
     margin-left: 12px;
   }
+}
+.footer--btn:hover {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .footer__mailing {
@@ -1066,6 +1098,12 @@ footer .container {
   border-radius: 0px 0px 4px 4px;
   margin-top: 30px;
   margin-left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.comand__item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 480px) {
   .comand__item {
@@ -1193,6 +1231,12 @@ footer .container {
   height: 92px;
   margin-left: 30px;
   margin-top: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.clients__item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 480px) {
   .clients__item {
@@ -1461,6 +1505,13 @@ footer .container {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.send-button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 480px) {
   .send-button {

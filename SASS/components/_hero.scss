@@ -6,6 +6,8 @@
   // padding-right: 60px;
   padding-bottom: 118px;
   padding-top: 118px;
+  max-width: 1600px;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -60,10 +62,12 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 360px;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 60px;
+    max-width: 696px;
   }
 }
 
@@ -81,4 +85,12 @@
   border: none;
   border-radius: 4px;
   /* pointer-events: none; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }

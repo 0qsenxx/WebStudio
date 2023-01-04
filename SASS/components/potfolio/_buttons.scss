@@ -17,12 +17,18 @@ main {
   border: none;
   padding: 6px 22px;
   border-radius: 5px;
-  transition-delay: 50ms;
-  transition-duration: 250ms;
+  // transition-delay: 50ms;
+  // transition-duration: 250ms;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: #2196f3;
     color: #fff;
+    &:hover{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
   }
 }
 

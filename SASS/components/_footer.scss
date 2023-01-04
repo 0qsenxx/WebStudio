@@ -168,6 +168,7 @@ footer .container {
   &:hover,
   :focus {
     border-color: #2196f3;
+    height: 100px;
   }
 }
 
@@ -205,9 +206,16 @@ footer .container {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.3s ease;
 
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
+  }
+
+  &:hover{
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
   }
 }
 

@@ -237,7 +237,7 @@ header .container {
 }
 .contacts--link1:hover,
 .contacts--link2:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .header__item {
@@ -288,18 +288,32 @@ header .container {
 .header--picture {
   margin-right: 10px;
   fill: #757575;
+  fill: currentColor;
+}
+.header--picture:hover {
+  fill: currentColor;
 }
 
 .mobile__btn {
   border: none;
   background-color: #fff;
   position: absolute;
-  right: -15px;
+  right: -290px;
+  top: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mobile__btn {
+    right: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile__btn {
     display: none;
   }
+}
+
+.active-page {
+  color: #2196f3;
 }
 
 .mobile-modal {
@@ -453,14 +467,16 @@ main {
   border: none;
   padding: 6px 22px;
   border-radius: 5px;
-  -webkit-transition-delay: 50ms;
-          transition-delay: 50ms;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main--button:hover {
   background-color: #2196f3;
   color: #fff;
+}
+.main--button:hover:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .buttons__item {
@@ -827,6 +843,7 @@ footer .container {
 .footer-input:hover,
 .footer-input :focus {
   border-color: #2196f3;
+  height: 100px;
 }
 
 .title-input-text {
@@ -868,11 +885,17 @@ footer .container {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 1200px) {
   .footer--btn {
     margin-left: 12px;
   }
+}
+.footer--btn:hover {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .footer__mailing {

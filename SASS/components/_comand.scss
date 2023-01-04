@@ -56,6 +56,13 @@
   border-radius: 0px 0px 4px 4px;
   margin-top: 30px;
   margin-left: 0;
+  transition: all 0.3s ease;
+
+  &:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
   @media screen and (min-width: 480px) {
     margin-top: 30px;
