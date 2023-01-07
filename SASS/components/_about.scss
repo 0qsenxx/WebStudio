@@ -25,6 +25,13 @@
   width: 370px;
   margin-left: 30px;
   position: relative;
+  transition: all 0.3s ease;
+
+  &:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);}
+
   // -webkit-transition: -webkit-transform 0.8s ease-in-out;
   // transition: transform 0.8s ease-in-out;
 
