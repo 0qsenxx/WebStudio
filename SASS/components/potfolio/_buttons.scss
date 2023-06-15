@@ -24,10 +24,12 @@ main {
   &:hover {
     background-color: #2196f3;
     color: #fff;
-    &:hover{
+    &:hover {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
   }
 }
@@ -41,7 +43,6 @@ main {
   }
 
   &:nth-child(4) {
-
     @media screen and (min-width: 1200px) {
       margin-left: 8px;
     }
@@ -51,7 +52,6 @@ main {
 .buttons__list {
   display: flex;
   flex-wrap: wrap;
-
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
